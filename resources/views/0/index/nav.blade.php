@@ -1,6 +1,6 @@
 @php
     $menus = json_decode('[
-        { "name": "Acceuil", "route": "index" },
+        { "name": "Accueil", "route": "index" },
         { "name": "Boutique", "route": "index" },
         { "name": "Formation", "route": "formation" },
         { "name": "Contactez-nous", "route": "contact" },

@@ -2,7 +2,10 @@
     $navbar = array('title' => "Sen EcoloMarket", 'route'=>'index');
 @endphp
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <a class="navbar-brand" href="{{ route($navbar['route'] )}}">{{ $navbar['title'] }}</a>
+    <a class="navbar-brand" href="{{ route($navbar['route'] )}}">
+        {{-- {{ $navbar['title'] }} --}}
+        <img src="{{ asset('images/Logo/Logo V2.png')}}" height="50px" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

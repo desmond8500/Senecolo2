@@ -8,7 +8,8 @@ class EcommerceController extends Controller
 {
     public function index(){
         $carousel = glob('images/carousel/*');
+        $articles = glob('images/produits/*');
 
-        return view('0.index',compact('carousel'));
+        return view('0.index',compact('carousel','articles'));
     }
 }

@@ -8,11 +8,11 @@
       @foreach ($carousel as $item)
             @if($loop->first)
                 <div class="carousel-item active">
-                    <img src="https://picsum.photos/200/100?random=1" class="d-block w-100" alt="https://picsum.photos/200/100?random=1">
+                    <img src="{{$item}}" class="d-block w-100" alt="{{$item}}">
                 </div>
             @else
                 <div class="carousel-item">
-                    <img src="https://picsum.photos/200/100?random=2" class="d-block w-100" alt="https://picsum.photos/200/100?random=2">
+                    <img src="{{ $item }}" class="d-block w-100" alt="{{ $item }}">
                 </div>
             @endif
       @endforeach

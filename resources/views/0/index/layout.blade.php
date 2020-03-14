@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('0/libraries/bootstrap-4.4.1-dist/css/bootstrap.min.css') }} ">
     @yield('links')
-    <title>Yonkou Tutos</title>
+    <title>SEN EcoloMarket</title>
 </head>
 <body class="container">
-    @include('0 Tutos.index.navbar')
+    @include('0.index.navbar')
     @yield('content')
     {{-- @include('0 Tutos.index.sidebar')
     @include('0 Tutos.index.footer') --}}

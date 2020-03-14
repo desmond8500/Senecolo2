@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class EcommerceController extends Controller
+{
+    public function index(){
+        $carousel = glob('images/carousel/*');
+
+        return view('0.index',compact('carousel'));
+    }
+}

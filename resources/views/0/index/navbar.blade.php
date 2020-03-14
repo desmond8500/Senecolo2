@@ -1,7 +1,7 @@
 @php
-    $navbar = array('title' => "Tutoriels", 'route'=>'tutos');
+    $navbar = array('title' => "Sen EcoloMarket", 'route'=>'index');
 @endphp
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <a class="navbar-brand" href="{{ route($navbar['route'] )}}">{{ $navbar['title'] }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,9 +26,13 @@
 
           @endforeach
       </ul>
-      {{-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Rechercher">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-      </form> --}}
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+        <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Rechercher</button>
+
+        <button class="btn btn-light mr-2">Connexion</button>
+        <button class="btn btn-light mr-2">Inscription</button>
+        <button class="btn btn-light mr-2"><i class="fa fa-cart-plus"></i></button>
+      </div>
     </div>
   </nav>

@@ -1,7 +1,7 @@
 @php
     $navbar = array('title' => "Sen EcoloMarket", 'route'=>'index');
 @endphp
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
     <a class="navbar-brand" href="{{ route($navbar['route'] )}}">
         {{-- {{ $navbar['title'] }} --}}
         <img src="{{ asset('images/Logo/Logo V2.png')}}" height="50px" alt="">

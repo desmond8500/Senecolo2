@@ -33,77 +33,85 @@
         </div>
 
         <div class="col-md-12">
-            <div class="card">
+            <div class="card bg-light">
                 <div class="card-header bg-primary text-white"> Produits recyclables </div>
                 <div class="card-body">
                     <div class="row">
                         @foreach ($articles as $article)
-                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 mb-2">
-                                <div class="card">
-                                    <img src="{{ asset($article) }}" class="card-img-top" alt="{{ asset($article) }}" height="150px">
+                            <div class="col-xs-6 col-sm-6 col-md-3 mb-2">
+                                <div class="card" class="fotorama"
+                                data-fit="cover">
+                                    <img src="{{ asset($article) }}" class="card-img-top m-1" data-fit="contain" alt="{{ asset($article) }}" height="150px">
                                     <div class="card-body">
                                         <h5 class="card-title">Plastique</h5>
                                         {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
-                                        <a href="#" class="btn btn-primary btn-sm">Acheter</a>
+                                        {{-- <a href="#" class="btn btn-primary btn-sm">Acheter</a> --}}
                                     </div>
                                 </div>
                             </div>
                         @endforeach
-                        <div class="col-12">
-                            <div class="card card-body">
-                                <h1>Formations</h1>
-                                <p> Images qui défilent </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-2">
+            <div class="card card-body">
+                <h1>Formations</h1>
+                <p> Images qui défilent </p>
+            </div>
+        </div>
+        <div class="col-12 mt-2">
+            <div class="card">
+                <div class="card-header">Produits recyclés</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                @foreach ($articles as $key => $article)
+                                    <div class="col-md-4 mb-2">
+                                        <div class="card">
+                                            <img src="{{ asset($article) }}" class="card-img-top" alt="{{ asset($article) }}" height="150px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Plastique</h5>
+                                                {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                                                {{-- <a href="#" class="btn btn-primary btn-sm">Acheter</a> --}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @if ($key == 5)
+                                        @break;
+                                    @endif
+                                @endforeach
                             </div>
+                        </div>
+                        <div class="col-md-3">
+                            @include('0.content.menur')
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-12">
-            <div class="row">
-                <div class="col-md-9">
+        <div class="col-12 mt-2">
+            <div class="card">
+                <div class="card-header">Les produits les plus demandés</div>
+                <div class="card card-body bg-light">
                     <div class="row">
                         @foreach ($articles as $key => $article)
-                            <div class="col-md-4 mb-2">
+                            <div class="col-md-3 mb-2">
                                 <div class="card">
                                     <img src="{{ asset($article) }}" class="card-img-top" alt="{{ asset($article) }}" height="150px">
                                     <div class="card-body">
                                         <h5 class="card-title">Plastique</h5>
                                         {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
-                                        <a href="#" class="btn btn-primary btn-sm">Acheter</a>
+                                        {{-- <a href="#" class="btn btn-primary btn-sm">Acheter</a> --}}
                                     </div>
                                 </div>
                             </div>
-                            @if ($key == 5)
+                            @if ($key ==3)
                                 @break;
                             @endif
                         @endforeach
                     </div>
-                </div>
-                <div class="col-md-3">
-                    @include('0.content.menur')
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="card card-body bg-light">
-                <h3>Les produits les plus demandés</h3>
-                <div class="row">
-                    @foreach ($articles as $key => $article)
-                        <div class="col-md-3 mb-2">
-                            <div class="card">
-                                <img src="{{ asset($article) }}" class="card-img-top" alt="{{ asset($article) }}" height="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Plastique</h5>
-                                    {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
-                                    <a href="#" class="btn btn-primary btn-sm">Acheter</a>
-                                </div>
-                            </div>
-                        </div>
-                        @if ($key ==3)
-                            @break;
-                        @endif
-                    @endforeach
                 </div>
             </div>
         </div>

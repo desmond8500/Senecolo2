@@ -24,7 +24,7 @@
         <div class="col-12">
             <div class="row">
                 @foreach ($articles as $article)
-                    <div class="col-md-3 mb-2">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 mb-2">
                         <div class="card">
                             <img src="{{ asset($article) }}" class="card-img-top" alt="{{ asset($article) }}" height="150px">
                             <div class="card-body">

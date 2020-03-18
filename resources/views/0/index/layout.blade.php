@@ -9,7 +9,7 @@
     @yield('links')
     <title>SEN EcoloMarket</title>
 </head>
-<body class="container bg-light" >
+<body class=" bg-light" >
     @include('0.index.navbar')
     @yield('content')
     @include('0.index.footer')

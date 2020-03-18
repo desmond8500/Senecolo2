@@ -9,9 +9,21 @@
     @yield('links')
     <title>SEN EcoloMarket</title>
 </head>
-<body class=" bg-light" >
+
+<style>
+    body{
+        /* background-color: #F5F5F5; */
+        /* background-color: #d4f8e8; */
+        /* background-color: #0b7169; */
+        background-color: #235952;
+    }
+</style>
+
+<body >
     @include('0.index.navbar')
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
     @include('0.index.footer')
 </body>
 {{-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> --}}

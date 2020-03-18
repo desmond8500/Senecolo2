@@ -1,0 +1,65 @@
+[
+  {
+    "menu": "Tous les articles",
+    "description": "Consulter tous les articles de cette catégorie",
+    "image": "https://image.flaticon.com/icons/svg/566/566001.svg",
+    "icon": "fa-circle",
+    "route": ""
+  },
+  {
+    "menu": "Bois",
+    "description": "Palettes, meubles usagés",
+    "image": "https://image.flaticon.com/icons/svg/683/683456.svg",
+    "icon": "fa-circle",
+    "route": "Bois"
+  },
+  {
+    "menu": "Cartons et Papier",
+    "description": "Papies et cartons",
+    "image": "https://image.flaticon.com/icons/svg/679/679821.svg",
+    "icon": "fa-circle",
+    "route": "Cartons et Papier"
+  },
+  {
+    "menu": "Electrique et Electronique",
+    "description": "Equipements electroniques et électriques",
+    "image": "https://image.flaticon.com/icons/svg/2479/2479535.svg",
+    "icon": "fa-circle",
+    "route": "Electrique et Electronique"
+  },
+  {
+    "menu": "Métaux ferreux",
+    "description": "Tiges, fers",
+    "image": "https://image.flaticon.com/icons/svg/1504/1504097.svg",
+    "icon": "fa-circle",
+    "route": "Métaux ferreux"
+  },
+  {
+    "menu": "Métaux non ferreux",
+    "description": "Aluminium, Cuivre",
+    "image": "https://image.flaticon.com/icons/svg/892/892866.svg",
+    "icon": "fa-circle",
+    "route": "Métaux non ferreux"
+  },
+  {
+    "menu": "Plastique",
+    "description": "Bouteilles de plastique, bouchons, bidons",
+    "image": "https://image.flaticon.com/icons/svg/1996/1996920.svg",
+    "icon": "fa-circle",
+    "route": "Plastique"
+  },
+  {
+    "menu": "Pneu",
+    "description": "Pneu de véhicules",
+    "image": "https://image.flaticon.com/icons/svg/271/271864.svg",
+    "icon": "fa-circle",
+    "route": "Pneu"
+  },
+  {
+    "menu": "Verre",
+    "description": "Bouteilles de verre",
+    "image": "https://image.flaticon.com/icons/svg/1676/1676438.svg",
+    "icon": "fa-circle",
+    "route": "Verre"
+  }
+]

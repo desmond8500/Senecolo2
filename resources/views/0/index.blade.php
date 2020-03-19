@@ -34,7 +34,7 @@
 
         <div class="col-md-12">
             <div class="card bg-light">
-                <div class="card-header bg-primary text-white"> Produits recyclables </div>
+                <div class="card-header bg-info text-white text-white"> Produits recyclables </div>
                 <div class="card-body">
                     <div class="row">
                         @foreach ($articles as $article)
@@ -43,7 +43,7 @@
                                 data-fit="cover">
                                     <img src="{{ asset($article) }}" class="card-img-top m-1" data-fit="contain" alt="{{ asset($article) }}" height="150px">
                                     <div class="card-body">
-                                        <h5 class="card-title">Plastique</h5>
+                                        <h5 class="card-title text-center">Plastique</h5>
                                         {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                                         {{-- <a href="#" class="btn btn-primary btn-sm">Acheter</a> --}}
                                     </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="col-12 mt-2">
             <div class="card">
-                <div class="card-header">Produits recyclés</div>
+                <div class="card-header bg-info text-white">Produits recyclés</div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-9">
@@ -72,7 +72,7 @@
                                         <div class="card">
                                             <img src="{{ asset($article) }}" class="card-img-top" alt="{{ asset($article) }}" height="150px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Plastique</h5>
+                                                <h5 class="card-title text-center">Plastique</h5>
                                                 {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                                                 {{-- <a href="#" class="btn btn-primary btn-sm">Acheter</a> --}}
                                             </div>
@@ -93,7 +93,7 @@
         </div>
         <div class="col-12 mt-2">
             <div class="card">
-                <div class="card-header">Les produits les plus demandés</div>
+                <div class="card-header bg-info text-white">Les produits les plus demandés</div>
                 <div class="card card-body bg-light">
                     <div class="row">
                         @foreach ($articles as $key => $article)
@@ -101,7 +101,7 @@
                                 <div class="card">
                                     <img src="{{ asset($article) }}" class="card-img-top" alt="{{ asset($article) }}" height="150px">
                                     <div class="card-body">
-                                        <h5 class="card-title">Plastique</h5>
+                                        <h5 class="card-title text-center">Plastique</h5>
                                         {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                                         {{-- <a href="#" class="btn btn-primary btn-sm">Acheter</a> --}}
                                     </div>

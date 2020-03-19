@@ -41,7 +41,7 @@
                             <div class="col-xs-6 col-sm-6 col-md-3 mb-2">
                                 <div class="card" class="fotorama"
                                 data-fit="cover">
-                                    <img src="{{ asset($article) }}" class="card-img-top m-1" data-fit="contain" alt="{{ asset($article) }}" height="150px">
+                                    <img src="{{ asset($article) }}" class="card-img-top" data-fit="contain" alt="{{ asset($article) }}" height="150px">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Plastique</h5>
                                         {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}

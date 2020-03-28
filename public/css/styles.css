@@ -1,0 +1,23 @@
+.sidebar{
+    border: 1px solid grey;
+    background-color: white;
+    padding-left: 10px;
+}
+.sidebarlink{
+    color: grey;
+    padding: 3px;
+}
+
+.titre{
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid green;
+    margin-bottom: 10px;;
+}
+.pub{
+    height: 133px;
+}
+
+body{
+    background-color: #2c786c;
+}

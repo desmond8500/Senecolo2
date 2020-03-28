@@ -55,10 +55,8 @@
             </div>
         </div>
         <div class="col-12 mt-2">
-            <div class="card card-body">
-                <h1>Formations</h1>
-                <p> Images qui défilent </p>
-            </div>
+                <img src="{{ asset('images/fomation/WhatsApp Image 2020-03-22 at 15.52.16.jpeg') }}" class="card-img-top" data-fit="contain" alt="{{ asset($article) }}" >
+
         </div>
         <div class="col-12 mt-2">
             <div class="card">

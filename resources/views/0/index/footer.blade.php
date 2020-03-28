@@ -55,4 +55,8 @@
             </div>
         </form>
     </div>
+    <div class="col-md-12">
+        <a href=" {{ route('index')}} " class="btn btn-success">Version 1</a>
+        <a href=" {{ route('index1')}} " class="btn btn-success">Version 2</a>
+    </div>
 </div>

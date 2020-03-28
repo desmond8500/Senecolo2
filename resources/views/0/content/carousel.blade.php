@@ -1,6 +1,6 @@
 
 
-<div class="fotorama" data-loop="true">*
+<div class="fotorama" data-loop="true">
     @foreach ($carousel as $item)
         <img src="{{$item}}">
 

@@ -11,5 +11,6 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->middleware('verified');
 
 Route::get('/ecommerce', 'EcommerceController@index')->name('index');
+Route::get('/ecommerce1', 'EcommerceController@index1')->name('index1');
 Route::get('/ecommerce/formation', 'EcommerceController@formation')->name('formation');
 Route::get('/ecommerce/contact', 'EcommerceController@contact')->name('contact');

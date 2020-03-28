@@ -15,7 +15,14 @@
     margin-bottom: 10px;;
 }
 .pub{
-    height: 133px;
+    height: 158px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.carousel{
+    border: 1px solid grey;
+    background-color: white;
 }
 
 body{

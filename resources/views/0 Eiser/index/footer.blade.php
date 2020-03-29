@@ -16,7 +16,7 @@
             <h3></h3>
 
         </div>
-        <div class="col-md-4 mt-4 mb-4 pr-4">
+        <div class="col-md-4 mt-4 pr-4">
             <h4 class="text-white">Laissez-nous un message</h4>
             <form action="">
                 @csrf
@@ -49,6 +49,15 @@
                 </div>
             </form>
 
+        </div>
+        <div class="col-md-12 social-media mb-4">
+            <div class="container">
+                <a href="" class="btn btn-light"> <i class="fa fa-facebook"></i> </a>
+                <a href="" class="btn btn-light"> <i class="fa fa-linkedin"></i> </a>
+                <a href="" class="btn btn-light"> <i class="fa fa-twitter"></i> </a>
+                <a href="" class="btn btn-light"> <i class="fa fa-instagram"></i> </a>
+                <a href="" class="btn btn-light"> <i class="fa fa-youtube"></i> </a>
+            </div>
         </div>
     </div>
 

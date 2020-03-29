@@ -19,7 +19,7 @@
                             <div class="col-md-3 mb-4">
                                 <div class=" rounded border bg-white">
                                         <img src="{{ asset($article) }}" class="article-img  img-fluid"  alt="{{ asset($article) }}">
-                                    <p class="text-center text-dark">Mouyt</p>
+                                    <p class="text-center text-dark">Article</p>
                                 </div>
                             </div>
                         @endforeach

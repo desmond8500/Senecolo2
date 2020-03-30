@@ -50,7 +50,7 @@
             </form>
 
         </div>
-        <div class="col-md-12 social-media mb-4">
+        <div class="col-md-12 social-media p-4 mt-4">
             <div class="container">
                 <a href="" class="btn btn-light"> <i class="fa fa-facebook"></i> </a>
                 <a href="" class="btn btn-light"> <i class="fa fa-linkedin"></i> </a>

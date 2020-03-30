@@ -1,4 +1,4 @@
-<footer class="footer-eiser mt-4 ">
+<footer class="footer-eiser mt-4">
     <div class="row">
         <div class="col-md-4 text-white">
             <div class="card-body">

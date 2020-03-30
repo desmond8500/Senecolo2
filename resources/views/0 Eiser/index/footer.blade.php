@@ -17,37 +17,39 @@
 
         </div>
         <div class="col-md-4 mt-4 pr-4">
-            <h4 class="text-white">Laissez-nous un message</h4>
-            <form action="">
-                @csrf
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Prénom">
-                        </div>
+            <div class="card-body">
+                <h4 class="text-white">Laissez-nous un message</h4>
+                <form action="">
+                    @csrf
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nom">
-                        </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nom">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Adresse mail">
-                        </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Adresse mail">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Téléphone">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Téléphone">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <textarea name="" class="form-control" cols="30" rows="7" placeholder="Laissez-nous votre message ici"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-success">Valider </button>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="form-group">
-                            <textarea name="" class="form-control" cols="30" rows="7" placeholder="Laissez-nous votre message ici"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <button class="btn btn-success">Valider </button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
 
         </div>
         <div class="col-md-12 social-media p-4 mt-4">

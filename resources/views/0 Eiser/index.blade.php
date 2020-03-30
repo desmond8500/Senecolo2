@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-9 ">
+        <div class="col-md-9 mb-2">
             <div class="carousel rounded">
                 @include('0.content.carousel',['carousel'=>$carousel])
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 ">
             @include('0 Eiser.content.pub')
         </div>
         <div class="col-md-12 ">

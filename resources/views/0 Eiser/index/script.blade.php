@@ -1,0 +1,19 @@
+<script src="{{asset("eiser/js/jquery-3.2.1.min.js")}}"></script>
+<script src="{{asset("eiser/js/popper.js")}}"></script>
+<script src="{{asset("eiser/js/bootstrap.min.js")}}"></script>
+<script src="{{asset("eiser/js/stellar.js")}}"></script>
+<script src="{{asset("eiser/vendors/lightbox/simpleLightbox.min.js")}}"></script>
+<script src="{{asset("eiser/vendors/nice-select/js/jquery.nice-select.min.js")}}"></script>
+<script src="{{asset("eiser/vendors/isotope/imagesloaded.pkgd.min.js")}}"></script>
+<script src="{{asset("eiser/vendors/isotope/isotope-min.js")}}"></script>
+<script src="{{asset("eiser/vendors/owl-carousel/owl.carousel.min.js")}}"></script>
+<script src="{{asset("eiser/js/jquery.ajaxchimp.min.js")}}"></script>
+<script src="{{asset("eiser/js/mail-script.js")}}"></script>
+<script src="{{asset("eiser/vendors/jquery-ui/jquery-ui.js")}}"></script>
+<script src="{{asset("eiser/vendors/counter-up/jquery.waypoints.min.js")}}"></script>
+<script src="{{asset("eiser/vendors/counter-up/jquery.counterup.js")}}"></script>
+<script src="{{asset("eiser/vendors/counter-up/jquery.waypoints.min.js")}}"></script>
+<script src="{{asset("eiser/vendors/counter-up/jquery.counterup.js")}}"></script>
+<script src="{{asset("eiser/js/mail-script.js")}}"></script>
+<script src="{{asset("eiser/js/theme.js")}}"></script>
+@yield('script')

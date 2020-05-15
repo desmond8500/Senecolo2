@@ -3,7 +3,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h2><span>Consultés</span></h2>
+            <h2><span>Recemment Consultés</span></h2>
             <p>Produits que vous avez consulté recemment</p>
           </div>
         </div>

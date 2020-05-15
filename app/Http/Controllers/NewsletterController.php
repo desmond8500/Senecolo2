@@ -60,7 +60,7 @@ class NewsletterController extends AppBaseController
 
         Flash::success('Newsletter saved successfully.');
 
-        return redirect(route('newsletters.index'));
+        return redirect()->back();
     }
 
     /**
@@ -125,7 +125,7 @@ class NewsletterController extends AppBaseController
 
         Flash::success('Newsletter updated successfully.');
 
-        return redirect(route('newsletters.index'));
+        return redirect()->back();
     }
 
     /**
@@ -151,6 +151,6 @@ class NewsletterController extends AppBaseController
 
         Flash::success('Newsletter deleted successfully.');
 
-        return redirect(route('newsletters.index'));
+        return redirect()->back();
     }
 }

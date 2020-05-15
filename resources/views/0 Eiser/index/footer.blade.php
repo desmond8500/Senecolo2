@@ -15,11 +15,11 @@
         <div class="col-lg-4 col-md-6 single-footer-widget">
           <h4>Newsletter</h4>
           <p>Souscrivez à notre newsletter pour être informés des nouveautés</p>
-          <div class="form-wrap" id="mc_embed_signup">
+          <div class="form-wrap">
             <form method="POST" action="{{route('newsletters.store')}}" class="form-inline">
                 @csrf
               <input class="form-control" name="email"   placeholder = 'Votre adresse mail'" required="" type="email">
-              <button type="submit" class="click-btn btn btn-default">S'indcrire</button>
+              <button type="submit" class="click-btn btn btn-default">S'inscrire</button>
               <div style="position: absolute; left: -5000px;">
                 <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
               </div>

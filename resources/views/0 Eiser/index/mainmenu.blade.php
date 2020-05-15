@@ -18,7 +18,7 @@
                 <ul class="nav navbar-nav center_nav pull-right">
                     @foreach ($menu->menulist as $menu_item)
                         <li class="nav-item">
-                            @isset($record)
+                            @isset($menu_item['route'])
                                 <a class="nav-link" href="{{route($menu_item['route'])}}">{{$menu_item['name']}}</a>
                             @else
                                 <a class="nav-link" href="">{{$menu_item['name']}}</a>

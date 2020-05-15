@@ -33,10 +33,10 @@ class EiserController extends Controller
             'logo' => 'senecolo3/img/logo/logo V2.png',
             'link' => 'index',
             'menulist' => array(
-                array('name' => 'Accueil',     'route' => ''),
-                array('name' => 'Boutique',    'route' => ''),
-                array('name' => 'Formation',   'route' => ''),
-                array('name' => 'Contact',     'route' => '')
+                array('name' => 'Accueil',     'route' => 'index'),
+                array('name' => 'Boutique',    'route' => 'boutique'),
+                array('name' => 'Formation',   'route' => 'formation'),
+                array('name' => 'Contact',     'route' => 'contact')
             )
         );
         return  $data;

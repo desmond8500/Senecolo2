@@ -10,19 +10,19 @@
 
 @endphp
 
-@include('0 eiser.index.head')
+@include('0 Eiser.index.head')
 
 <body>
   <header class="header_area">
-        @include('0 eiser.index.topmenu')
-        @include('0 eiser.index.mainmenu')
+        @include('0 Eiser.index.topmenu')
+        @include('0 Eiser.index.mainmenu')
   </header>
 
     @yield('content')
 
-    @include('0 eiser.index.footer')
+    @include('0 Eiser.index.footer')
 
-    @include('0 eiser.index.script')
+    @include('0 Eiser.index.script')
 </body>
 
 </html>

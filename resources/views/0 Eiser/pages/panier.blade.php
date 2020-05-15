@@ -1,7 +1,7 @@
-@extends('0 eiser.layout')
+@extends('0 Eiser.layout')
 
 @section('content')
-    @include('0 eiser.index.banner')
+    @include('0 Eiser.index.banner')
 <section class="cart_area">
       <div class="container">
         <div class="cart_inner">
@@ -21,7 +21,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/cart-1.jpg")}}"
+                          src="{{asset("Eiser/img/product/single-product/cart-1.jpg")}}"
                           alt=""
                         />
                       </div>
@@ -69,7 +69,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/cart-1.jpg")}}"
+                          src="{{asset("Eiser/img/product/single-product/cart-1.jpg")}}"
                           alt=""
                         />
                       </div>
@@ -117,7 +117,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/cart-1.jpg")}}"
+                          src="{{asset("Eiser/img/product/single-product/cart-1.jpg")}}"
                           alt=""
                         />
                       </div>

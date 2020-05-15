@@ -1,7 +1,7 @@
-@extends('0 eiser.layout')
+@extends('0 Eiser.layout')
 
 @section('content')
-    @include('0 eiser.index.banner')
+    @include('0 Eiser.index.banner')
 <div class="product_image_area">
       <div class="container">
         <div class="row s_product_inner">
@@ -19,7 +19,7 @@
                     class="active"
                   >
                     <img
-                      src="{{asset("eiser/img/product/single-product/s-product-s-2.jpg")}}"
+                      src="{{asset("Eiser/img/product/single-product/s-product-s-2.jpg")}}"
                       alt=""
                     />
                   </li>
@@ -28,7 +28,7 @@
                     data-slide-to="1"
                   >
                     <img
-                      src="{{asset("eiser/img/product/single-product/s-product-s-3.jpg")}}"
+                      src="{{asset("Eiser/img/product/single-product/s-product-s-3.jpg")}}"
                       alt=""
                     />
                   </li>
@@ -37,7 +37,7 @@
                     data-slide-to="2"
                   >
                     <img
-                      src="{{asset("eiser/img/product/single-product/s-product-s-4.jpg")}}"
+                      src="{{asset("Eiser/img/product/single-product/s-product-s-4.jpg")}}"
                       alt=""
                     />
                   </li>
@@ -46,21 +46,21 @@
                   <div class="carousel-item active">
                     <img
                       class="d-block w-100"
-                      src="{{asset("eiser/img/product/single-product/s-product-1.jpg")}}"
+                      src="{{asset("Eiser/img/product/single-product/s-product-1.jpg")}}"
                       alt="First slide"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       class="d-block w-100"
-                      src="{{asset("eiser/img/product/single-product/s-product-1.jpg")}}"
+                      src="{{asset("Eiser/img/product/single-product/s-product-1.jpg")}}"
                       alt="Second slide"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       class="d-block w-100"
-                      src="{{asset("eiser/img/product/single-product/s-product-1.jpg")}}"
+                      src="{{asset("Eiser/img/product/single-product/s-product-1.jpg")}}"
                       alt="Third slide"
                     />
                   </div>
@@ -310,7 +310,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/review-1.png")}}"
+                          src="{{asset("Eiser/img/product/single-product/review-1.png")}}"
                           alt=""
                         />
                       </div>
@@ -331,7 +331,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/review-2.png")}}"
+                          src="{{asset("Eiser/img/product/single-product/review-2.png")}}"
                           alt=""
                         />
                       </div>
@@ -352,7 +352,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/review-3.png")}}"
+                          src="{{asset("Eiser/img/product/single-product/review-3.png")}}"
                           alt=""
                         />
                       </div>
@@ -518,7 +518,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/review-1.png")}}"
+                          src="{{asset("Eiser/img/product/single-product/review-1.png")}}"
                           alt=""
                         />
                       </div>
@@ -542,7 +542,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/review-2.png")}}"
+                          src="{{asset("Eiser/img/product/single-product/review-2.png")}}"
                           alt=""
                         />
                       </div>
@@ -566,7 +566,7 @@
                     <div class="media">
                       <div class="d-flex">
                         <img
-                          src="{{asset("eiser/img/product/single-product/review-3.png")}}"
+                          src="{{asset("Eiser/img/product/single-product/review-3.png")}}"
                           alt=""
                         />
                       </div>

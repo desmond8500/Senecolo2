@@ -1,7 +1,7 @@
-@extends('0 eiser.layout')
+@extends('0 Eiser.layout')
 
 @section('content')
-    @include('0 eiser.index.banner')
+    @include('0 Eiser.index.banner')
 
     <section class="section_gap">
     <div class="container">

@@ -3,8 +3,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h2><span>new products</span></h2>
-            <p>Bring called seed first of third give itself now ment</p>
+            <h2><span>Les nouveaux produits</span></h2>
+            <p>Consultez nos nouveaux arrivages</p>
           </div>
         </div>
       </div>
@@ -17,8 +17,8 @@
             <div class="product-img">
               <img class="img-fluid" src="{{asset("eiser/img/product/new-product/new-product1.png")}}" alt="" />
             </div>
-            <h4>$120.70</h4>
-            <a href="#" class="main_btn">Add to cart</a>
+            {{-- <h4>$120.70</h4> --}}
+            <a href="#" class="main_btn">Ajouter au panier</a>
           </div>
         </div>
 
@@ -45,8 +45,8 @@
                     <h4>Nike latest sneaker</h4>
                   </a>
                   <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
+                    {{-- <span class="mr-4">$25.00</span> --}}
+                    {{-- <del>$35.00</del> --}}
                   </div>
                 </div>
               </div>
@@ -73,8 +73,8 @@
                     <h4>Men’s denim jeans</h4>
                   </a>
                   <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
+                    {{-- <span class="mr-4">$25.00</span> --}}
+                    {{-- <del>$35.00</del> --}}
                   </div>
                 </div>
               </div>
@@ -101,8 +101,8 @@
                     <h4>quartz hand watch</h4>
                   </a>
                   <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
+                    {{-- <span class="mr-4">$25.00</span> --}}
+                    {{-- <del>$35.00</del> --}}
                   </div>
                 </div>
               </div>
@@ -129,8 +129,8 @@
                     <h4>adidas sport shoe</h4>
                   </a>
                   <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <del>$35.00</del>
+                    {{-- <span class="mr-4">$25.00</span> --}}
+                    {{-- <del>$35.00</del> --}}
                   </div>
                 </div>
               </div>

@@ -3,8 +3,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h2><span>Inspired products</span></h2>
-            <p>Bring called seed first of third give itself now ment</p>
+            <h2><span>Consultés</span></h2>
+            <p>Produits que vous avez consulté recemment</p>
           </div>
         </div>
       </div>
@@ -31,8 +31,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -59,8 +59,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -87,8 +87,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -115,8 +115,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -143,8 +143,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -171,8 +171,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -199,8 +199,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -227,8 +227,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>

@@ -3,8 +3,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h2><span>latest blog</span></h2>
-            <p>Bring called seed first of third give itself now ment</p>
+            <h2><span>Derniers articles</span></h2>
+            <p>Consultez les derniers articles publiés sur notre blog</p>
           </div>
         </div>
       </div>

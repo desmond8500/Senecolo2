@@ -31,8 +31,8 @@
                 <h4>Latest men’s sneaker</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -59,8 +59,8 @@
                 <h4>Red women purses</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>
@@ -87,8 +87,8 @@
                 <h4>Men stylist Smart Watch</h4>
               </a>
               <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <del>$35.00</del>
+                {{-- <span class="mr-4">$25.00</span> --}}
+                {{-- <del>$35.00</del> --}}
               </div>
             </div>
           </div>

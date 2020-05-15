@@ -1,22 +1,23 @@
 <div class="left_sidebar_area">
-    @foreach ($sidebar as $item)
+    @isset($sidebar)
+        @foreach ($sidebar as $item)
+            <aside class="left_widgets p_filter_widgets">
+                <div class="l_w_title">
+                    <h3>{{$item->name}}</h3>
+                </div>
+                <div class="widgets_inner">
+                    <ul class="list">
+                        @foreach ($item->data as $data)
+                        <li>
+                            <a href="{{$data->link}}">{{$data->name}}</a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </aside>
+        @endforeach
+        @else
         <aside class="left_widgets p_filter_widgets">
-            <div class="l_w_title">
-                <h3>{{$item->name}}</h3>
-            </div>
-            <div class="widgets_inner">
-                <ul class="list">
-                    @foreach ($item->data as $data)
-                    <li>
-                        <a href="{{$data->link}}">{{$data->name}}</a>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-        </aside>
-    @endforeach
-
-    {{-- <aside class="left_widgets p_filter_widgets">
     <div class="l_w_title">
         <h3>Product Brand</h3>
     </div>
@@ -79,5 +80,7 @@
         </div>
         </div>
     </div>
-    </aside> --}}
+    </aside>
+    @endisset
+
 </div>

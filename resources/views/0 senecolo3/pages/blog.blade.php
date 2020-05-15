@@ -29,7 +29,7 @@
                         </div>
                       </article>
 
-                      <article class="blog_item">
+                      {{-- <article class="blog_item">
                         <div class="blog_item_img">
                           <img class="card-img rounded-0" src="{{asset("Eiser/img/blog/main-blog/m-blog-2.jpg")}}" alt="">
                           <a href="#" class="blog_item_date">
@@ -111,7 +111,7 @@
                               <li><a href="#"><i class="ti-comments"></i> 03 Comments</a></li>
                             </ul>
                         </div>
-                      </article>
+                      </article> --}}
 
 
 

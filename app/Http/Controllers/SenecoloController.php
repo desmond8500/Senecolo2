@@ -28,8 +28,14 @@ class SenecoloController extends Controller
         return view("$this->folder.boutique",compact('banner','sidebar'));
     }
     public  function formation(){
-
-        return view("$this->folder.blog");
+        $banner = (object) array(
+            'title' => 'Formation et Blog',
+            'message' => 'Vos  trouverez ici divers articles sur l\'environnement et le recyclage de déchets. Nous proposons aussi des formations sur le même thèmes',
+            'routes' => (object) array(
+                (object) array('name' => 'Formation', 'link' => 'formation')
+            )
+        );
+        return view("$this->folder.blog",compact('banner'));
     }
     public  function contact(){
         $banner = (object) array(

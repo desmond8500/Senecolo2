@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categorie;
 use Illuminate\Http\Request;
 
 class SenecoloController extends Controller
@@ -13,8 +14,18 @@ class SenecoloController extends Controller
         return view("$this->folder.index");
     }
     public  function boutique(){
-
-        return view("$this->folder.boutique");
+        $banner = (object) array(
+            'title' => 'Boutique',
+            'message' => 'Les produits Senecolo market',
+            'routes' => (object) array(
+                (object) array('name' => 'Boutique', 'link' => 'boutique')
+            )
+        );
+        $sidebar = (object) array(
+                (object) array('name' => 'Produits recyclables', 'data' => Categorie::where('mother','Produits recyclables')->get()),
+                (object) array('name' => 'Produits recyclés', 'data' => Categorie::where('mother', 'Produits recyclés')->get())
+        );
+        return view("$this->folder.boutique",compact('banner','sidebar'));
     }
     public  function formation(){
 
@@ -22,7 +33,7 @@ class SenecoloController extends Controller
     }
     public  function contact(){
         $banner = (object) array(
-            'title' => 'Contacts',
+            'title' => 'Boutique',
             'message' => '',
             'routes' => (object) array(
                (object) array( 'name'=> 'Contacts', 'link'=>'contact')

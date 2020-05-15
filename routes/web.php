@@ -15,6 +15,11 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->middleware('verified');
 
 // ====================================================================================
+// Seeders
+// ====================================================================================
+Route::get('/seeds/categories', 'SeedsController@categorie')->name('seeds.categorie');
+
+// ====================================================================================
 // Infyom générator
 // ====================================================================================
 Route::get('generator_builder', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@builder')->name('io_generator_builder');
@@ -31,3 +36,7 @@ Route::resource('newsletters', 'NewsletterController');
 
 
 Route::resource('messages', 'MessageController');
+
+
+
+Route::resource('categories', 'CategorieController');

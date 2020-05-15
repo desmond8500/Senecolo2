@@ -22,3 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('newsletters', 'NewsletterAPIController');
 
 Route::resource('messages', 'MessageAPIController');
+
+
+
+Route::resource('categories', 'CategorieAPIController');

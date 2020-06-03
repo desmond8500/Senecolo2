@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Categorie;
+use App\Models\Ecommerce_article;
+use App\Models\Ecommerce_category;
 use Illuminate\Http\Request;
 
 class SenecoloController extends Controller
 {
-    public $folder = '0 senecolo3.pages';
-
     public  function index(){
 
-        return view("$this->folder.index");
+        return view("0 senecolo3.pages.index");
     }
     public  function boutique(){
         $banner = (object) array(
@@ -22,10 +22,12 @@ class SenecoloController extends Controller
             )
         );
         $sidebar = (object) array(
-                (object) array('name' => 'Produits recyclables', 'data' => Categorie::where('mother','Produits recyclables')->get()),
-                (object) array('name' => 'Produits recyclés', 'data' => Categorie::where('mother', 'Produits recyclés')->get())
+                (object) array('name' => 'Catégories', 'data' => Ecommerce_category::all())
         );
-        return view("$this->folder.boutique",compact('banner','sidebar'));
+
+        $articles = Ecommerce_article::all();
+
+        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles'));
     }
     public  function formation(){
         $banner = (object) array(
@@ -35,7 +37,7 @@ class SenecoloController extends Controller
                 (object) array('name' => 'Formation', 'link' => 'formation')
             )
         );
-        return view("$this->folder.blog",compact('banner'));
+        return view("0 senecolo3.pages.blog",compact('banner'));
     }
     public  function contact(){
         $banner = (object) array(
@@ -45,6 +47,29 @@ class SenecoloController extends Controller
                (object) array( 'name'=> 'Contacts', 'link'=>'contact')
             )
         );
-        return view("$this->folder.contact",compact('banner'));
+        return view("0 senecolo3.pages.contact",compact('banner'));
+    }
+    public  function backoffice($section=null){
+        $banner = (object) array(
+            'title' => 'Backoffice',
+            'message' => '',
+            'routes' => (object) array(
+               (object) array( 'name'=> 'Backoffice', 'link'=>'backoffice')
+            )
+        );
+
+        switch ($section) {
+            case 'category':
+                $content = "0 senecolo3.component.backoffice.$section";
+                break;
+
+            default:
+                # code...
+                break;
+        }
+
+
+
+        return view("0 senecolo3.pages.backoffice",compact('banner', 'content'));
     }
 }

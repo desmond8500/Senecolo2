@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateCategoriesTable extends Migration
+class CreateArticlesTable extends Migration
 {
 
     /**
@@ -13,11 +13,15 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('mother');
-            $table->string('name');
-            $table->string('link');
+            $table->string('article');
+            $table->string('images');
+            $table->string('description');
+            $table->string('quantite');
+            $table->string('categorie');
+            $table->string('prix_achat');
+            $table->string('prix_vente')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -30,6 +34,6 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('categories');
+        Schema::drop('articles');
     }
 }

@@ -14,7 +14,7 @@
 
 <body>
   <header class="header_area">
-        @include('0 Eiser.index.topmenu')
+        {{-- @include('0 Eiser.index.topmenu') --}}
         @include('0 Eiser.index.mainmenu')
   </header>
 

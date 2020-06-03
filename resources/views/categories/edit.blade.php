@@ -3,7 +3,7 @@
 @section('content')
     <ol class="breadcrumb">
           <li class="breadcrumb-item">
-             <a href="{!! route('categories.index') !!}">Categorie</a>
+             <a href="{!! route('categories.index') !!}">Category</a>
           </li>
           <li class="breadcrumb-item active">Edit</li>
         </ol>
@@ -15,10 +15,10 @@
                       <div class="card">
                           <div class="card-header">
                               <i class="fa fa-edit fa-lg"></i>
-                              <strong>Edit Categorie</strong>
+                              <strong>Edit Category</strong>
                           </div>
                           <div class="card-body">
-                              {!! Form::model($categorie, ['route' => ['categories.update', $categorie->id], 'method' => 'patch']) !!}
+                              {!! Form::model($category, ['route' => ['categories.update', $category->id], 'method' => 'patch']) !!}
 
                               @include('categories.fields')
 

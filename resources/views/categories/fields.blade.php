@@ -1,19 +1,19 @@
-<!-- Mother Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('mother', 'Mother:') !!}
-    {!! Form::select('mother', ['select' => 'select', 'recyclables' => 'recyclables', 'recyclés' => 'recyclés'], null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Name Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('name', 'Name:') !!}
     {!! Form::text('name', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Link Field -->
+<!-- Description Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('link', 'Link:') !!}
-    {!! Form::text('link', null, ['class' => 'form-control']) !!}
+    {!! Form::label('description', 'Description:') !!}
+    {!! Form::text('description', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Photo Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('photo', 'Photo:') !!}
+    {!! Form::text('photo', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

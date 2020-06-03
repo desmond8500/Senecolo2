@@ -17,3 +17,21 @@
         <span>Categories</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('articles*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('articles.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Articles</span>
+    </a>
+</li>
+<li class="nav-item {{ Request::is('ecommerceCategories*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('ecommerceCategories.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Ecommerce Categories</span>
+    </a>
+</li>
+<li class="nav-item {{ Request::is('ecommerceArticles*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('ecommerceArticles.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Ecommerce Articles</span>
+    </a>
+</li>

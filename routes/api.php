@@ -26,3 +26,9 @@ Route::resource('messages', 'MessageAPIController');
 
 
 Route::resource('categories', 'CategorieAPIController');
+
+Route::resource('articles', 'ArticleAPIController');
+
+Route::resource('ecommerce_categories', 'Ecommerce_categoryAPIController');
+
+Route::resource('ecommerce_articles', 'Ecommerce_articleAPIController');

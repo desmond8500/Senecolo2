@@ -20,11 +20,12 @@
                         <li class="nav-item">
                             @isset($menu_item['route'])
                                 <a class="nav-link" href="{{route($menu_item['route'])}}">{{$menu_item['name']}}</a>
-                            @else
+                                @else
                                 <a class="nav-link" href="">{{$menu_item['name']}}</a>
                             @endisset
                         </li>
                     @endforeach
+
                   {{-- <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                   </li>

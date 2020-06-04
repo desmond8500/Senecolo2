@@ -75,7 +75,7 @@ class SenecoloController extends Controller
                 break;
 
             default:
-                # code...
+                $content = null;
                 break;
         }
 

@@ -8,7 +8,13 @@
                 <div class="widgets_inner">
                     <ul class="list">
                         @foreach ($item->data as $data)
-                        <li>
+                        @php
+                            if ($data->categorie == $categorie)
+                                $class = 'active';
+                            else
+                                $class = '';
+                        @endphp
+                        <li class="{{$class}}">
                             <a href="{{route('boutique',['categorie'=>$data->categorie])}}">{{$data->categorie}}</a>
                         </li>
                         @endforeach

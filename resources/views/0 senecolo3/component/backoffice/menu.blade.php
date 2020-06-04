@@ -11,7 +11,7 @@
     </div>
     <div class="widgets_inner">
         <ul class="list">
-            @foreach ($menu as $item)
+        @foreach ($menu as $item)
             @php
                 if ($item->section == $section)
                     $class = 'active';

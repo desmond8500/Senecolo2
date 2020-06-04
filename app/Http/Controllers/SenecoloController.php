@@ -33,7 +33,7 @@ class SenecoloController extends Controller
 
 
 
-        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles'));
+        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie'));
     }
     public  function formation(){
         $banner = (object) array(

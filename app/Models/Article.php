@@ -23,7 +23,7 @@ class Article extends Model
     use SoftDeletes;
 
     public $table = 'articles';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -61,8 +61,13 @@ class Article extends Model
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
-    
+    public function categories()
+    {
+        return $this->hasMany('App\Model\Ecommerce_category');
+    }
+
+
 }

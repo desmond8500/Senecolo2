@@ -32,8 +32,12 @@
                     </div>
                         {{-- <input type="text" name="prix_vente"  hidden class="form-control" required> --}}
                     <div class="form-group col-sm-6">
-                        <label>Categorie</label>
-                        <input type="text" name="category" class="form-control" required>
+                        <label>Categorie</label> <br>
+                            <select class="sorting" name="category" style="display: none;">
+                        @foreach ($categories as $category)
+                            <option>{{ $category->categorie }} </option>
+                        @endforeach
+                        </select>
                     </div>
 
                     <div class="form-group col-sm-6">

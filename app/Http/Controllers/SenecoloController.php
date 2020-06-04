@@ -57,9 +57,14 @@ class SenecoloController extends Controller
                (object) array( 'name'=> 'Backoffice', 'link'=>'backoffice')
             )
         );
+        $categories = Ecommerce_category::all();
+        $articles = Ecommerce_article::all();
 
         switch ($section) {
             case 'category':
+                $content = "0 senecolo3.component.backoffice.$section";
+                break;
+            case 'articles':
                 $content = "0 senecolo3.component.backoffice.$section";
                 break;
 
@@ -68,8 +73,6 @@ class SenecoloController extends Controller
                 break;
         }
 
-
-
-        return view("0 senecolo3.pages.backoffice",compact('banner', 'content'));
+        return view("0 senecolo3.pages.backoffice",compact('banner', 'content', 'categories', 'section', 'articles'));
     }
 }

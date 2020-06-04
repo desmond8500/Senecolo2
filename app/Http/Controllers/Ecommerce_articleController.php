@@ -134,7 +134,7 @@ class Ecommerce_articleController extends AppBaseController
 
         Flash::success('Ecommerce Article updated successfully.');
 
-        return redirect(route('ecommerceArticles.index'));
+        return redirect()->back();
     }
 
     /**
@@ -160,6 +160,6 @@ class Ecommerce_articleController extends AppBaseController
 
         Flash::success('Ecommerce Article deleted successfully.');
 
-        return redirect(route('ecommerceArticles.index'));
+        return redirect()->back();
     }
 }

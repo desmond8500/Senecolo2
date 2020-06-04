@@ -125,7 +125,7 @@ class Ecommerce_categoryController extends AppBaseController
 
         Flash::success('Ecommerce Category updated successfully.');
 
-        return redirect(route('ecommerceCategories.index'));
+        return redirect()->back();
     }
 
     /**
@@ -151,6 +151,6 @@ class Ecommerce_categoryController extends AppBaseController
 
         Flash::success('Ecommerce Category deleted successfully.');
 
-        return redirect(route('ecommerceCategories.index'));
+        return redirect()->back();
     }
 }

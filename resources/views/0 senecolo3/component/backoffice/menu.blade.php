@@ -1,6 +1,7 @@
 @php
     $menu = json_decode('[
-        { "name": "Catégories", "section": "category"}
+        { "name": "Catégories", "section": "category"},
+        { "name": "Articles", "section": "articles"}
     ]');
 @endphp
 
@@ -10,9 +11,16 @@
     </div>
     <div class="widgets_inner">
         <ul class="list">
-        @foreach ($menu as $item)
-            <li>
-                <a href="{{route('backoffice',['section'=>$item->section])}}">{{$item->name}}</a>
+            @foreach ($menu as $item)
+            @php
+                if ($item->section == $section)
+                    $class = 'active';
+                else
+                    $class = '';
+
+            @endphp
+            <li class="{{$class}}">
+                <a href="{{route('backoffice',['section'=>$item->section])}}" >{{$item->name}}</a>
             </li>
         @endforeach
         </ul>

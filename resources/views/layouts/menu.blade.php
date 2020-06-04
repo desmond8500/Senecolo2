@@ -35,3 +35,9 @@
         <span>Ecommerce Articles</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('ecommercePaniers*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('ecommercePaniers.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Ecommerce Paniers</span>
+    </a>
+</li>

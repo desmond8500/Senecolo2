@@ -32,3 +32,5 @@ Route::resource('articles', 'ArticleAPIController');
 Route::resource('ecommerce_categories', 'Ecommerce_categoryAPIController');
 
 Route::resource('ecommerce_articles', 'Ecommerce_articleAPIController');
+
+Route::resource('ecommerce_paniers', 'Ecommerce_panierAPIController');

@@ -56,3 +56,6 @@ Route::resource('articles', 'ArticleController');
 Route::resource('ecommerceCategories', 'Ecommerce_categoryController');
 
 Route::resource('ecommerceArticles', 'Ecommerce_articleController');
+
+
+Route::resource('ecommercePaniers', 'Ecommerce_panierController');

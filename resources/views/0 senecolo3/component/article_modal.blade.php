@@ -22,32 +22,29 @@
                 {!! nl2br($article->description) !!}
               </p>
               <div class="product_count">
-                <label for="qty">Quantity:</label>
-                <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty"
+                <label for="qty">Quantité:</label>
+                <input type="text" name="quantite" id="sst" maxlength="{{$article->quantite}}" value="1" title="Quantity:" class="input-text qty"
                 />
-                <button
-                  onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                  class="increase items-count"
-                  type="button"
-                >
+                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count"  type="button" >
                   <i class="lnr lnr-chevron-up"></i>
                 </button>
-                <button
-                  onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                  class="reduced items-count"
-                  type="button"
-                >
+                <button  onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button"  >
                   <i class="lnr lnr-chevron-down"></i>
                 </button>
               </div>
               <div class="card_area">
-                <a class="main_btn" href="#">Add to Cart</a>
-                <a class="icon_btn" href="#">
+                <a class="main_btn" href="#">Ajouter au panier</a>
+                {{-- <a class="icon_btn" href="#">
                   <i class="lnr lnr lnr-diamond"></i>
-                </a>
-                <a class="icon_btn" href="#">
-                  <i class="lnr lnr lnr-heart"></i>
-                </a>
+                </a> --}}
+                <form action="{{ route('ecommercePaniers.store',['ecommercePanier'=>$article])}}" method="post">
+                    @csrf
+                    <input type="text" name="user_id" value="0" hidden>
+                    <input type="text" name="product_id" value="{{ $article->id}} " hidden>
+                    <button type="submit" class="icon_btn" href="#">
+                        <i class="lnr lnr lnr-heart"></i>
+                    </button>
+                </form>
               </div>
             </div>
           </div>
@@ -61,61 +58,21 @@
     <div class="container">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-        <a
-            class="nav-link"
-            id="home-tab"
-            data-toggle="tab"
-            href="#home"
-            role="tab"
-            aria-controls="home"
-            aria-selected="true"
-            >Description</a
-        >
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >Description</a>
         </li>
         <li class="nav-item">
-        <a
-            class="nav-link"
-            id="profile-tab"
-            data-toggle="tab"
-            href="#profile"
-            role="tab"
-            aria-controls="profile"
-            aria-selected="false"
-            >Specification</a
-        >
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" >Specification</a>
         </li>
         <li class="nav-item">
-        <a
-            class="nav-link"
-            id="contact-tab"
-            data-toggle="tab"
-            href="#contact"
-            role="tab"
-            aria-controls="contact"
-            aria-selected="false"
-            >Comments</a
-        >
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" >Comments</a>
         </li>
         <li class="nav-item">
-        <a
-            class="nav-link active"
-            id="review-tab"
-            data-toggle="tab"
-            href="#review"
-            role="tab"
-            aria-controls="review"
-            aria-selected="false"
-            >Reviews</a
-        >
+            <a class="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false" >Reviews</a>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
         <div
-        class="tab-pane fade"
-        id="home"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-        >
+        class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab" >
         <p>
             Beryl Cook is one of Britain’s most talented and amusing artists
             .Beryl’s pictures feature women of all shapes and sizes enjoying
@@ -147,11 +104,7 @@
         </p>
         </div>
         <div
-        class="tab-pane fade"
-        id="profile"
-        role="tabpanel"
-        aria-labelledby="profile-tab"
-        >
+        class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" >
         <div class="table-responsive">
             <table class="table">
             <tbody>

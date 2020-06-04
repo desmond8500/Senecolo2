@@ -10,7 +10,11 @@ Route::get('/', function () {
     return redirect()->route('boutique');
 })->name('index');
 Route::get('/blog/index', 'SenecoloController@blog')->name('blog');
+
 Route::get('/boutique/index/{categorie?}', 'SenecoloController@boutique')->name('boutique');
+Route::get('/panier/add/{product_id?} ', 'SenecoloController@add_to_card')->name('card.add');
+
+
 Route::get('/formation/index', 'SenecoloController@formation')->name('formation');
 Route::get('/contact', 'SenecoloController@contact')->name('contact');
 

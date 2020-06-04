@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Categorie;
 use App\Models\Ecommerce_article;
 use App\Models\Ecommerce_category;
+use App\Models\Ecommerce_panier;
 use Illuminate\Http\Request;
 
 class SenecoloController extends Controller
@@ -80,5 +81,16 @@ class SenecoloController extends Controller
         }
 
         return view("0 senecolo3.pages.backoffice",compact('banner', 'content', 'categories', 'section', 'articles'));
+    }
+
+    public function add_to_card($product_id){
+        $card = new Ecommerce_panier();
+
+        $card->user_id = 0;
+        $card->product_id = $product_id;
+        $card->save();
+
+        redirect()->route('boutique');
+
     }
 }

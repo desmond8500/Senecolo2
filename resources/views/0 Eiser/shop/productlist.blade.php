@@ -16,9 +16,11 @@
                         <a href="#">
                             <i class="ti-shopping-cart"></i>
                         </a>
-                        {{-- <a type="button" class="btn btn-primary btn-sm text-white {{ $class ?? ''}}" data-toggle="modal" data-target="#articleDetail{{$article->id}}">
-                            <i class="fa fa-plus"></i> Ajouter un Article
+                        {{-- <a href="{{ route('card.add',['product_id'=>$article->id])}}">
+                            <i class="ti-shopping-cart"></i>
                         </a> --}}
+
+
                     </div>
                 </div>
                 <div class="product-btm">

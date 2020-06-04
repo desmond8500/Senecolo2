@@ -36,9 +36,14 @@
                         <input type="text" name="prix_vente" class="form-control" value="0" value="{{ $article->prix_vente }}">
                     </div>
                         {{-- <input type="text" name="prix_vente"  hidden class="form-control" required> --}}
-                    <div class="form-group col-sm-6">
-                        <label>Categorie</label>
-                        <input type="text" name="category" class="form-control" required value="{{ $article->category }}">
+                     <div class="form-group col-sm-6">
+                        <label>Categorie</label> <br>
+                            <select class="sorting" name="category" style="display: none;">
+                                <option>{{ $article->category }} </option>
+                        @foreach ($categories as $category)
+                            <option>{{ $category->categorie }} </option>
+                        @endforeach
+                        </select>
                     </div>
 
                     <div class="form-group col-sm-6">

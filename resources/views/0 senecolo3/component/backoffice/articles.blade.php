@@ -9,6 +9,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Désignation</th>
+                <th scope="col">Catégorie</th>
                 <th scope="col">Quantité</th>
                 <th scope="col">Prix</th>
                 <th scope="col">Action</th>
@@ -19,6 +20,7 @@
             <tr>
                 <th scope="row">{{ $key+1 }} </th>
                 <td>{{ $article->article}} </td>
+                <td>{{ $article->category}} </td>
                 <td>{{ $article->quantite}} </td>
                 <td>{{ $article->prix_vente}} </td>
                 <td>

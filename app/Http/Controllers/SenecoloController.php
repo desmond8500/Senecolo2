@@ -13,7 +13,7 @@ class SenecoloController extends Controller
 
         return view("0 senecolo3.pages.index");
     }
-    public  function boutique(){
+    public  function boutique($categorie=null){
         $banner = (object) array(
             'title' => 'Boutique',
             'message' => 'Les produits Senecolo market',
@@ -25,7 +25,13 @@ class SenecoloController extends Controller
                 (object) array('name' => 'Catégories', 'data' => Ecommerce_category::all())
         );
 
-        $articles = Ecommerce_article::all();
+        if ($categorie) {
+            $articles = Ecommerce_article::where('category',$categorie)->get();
+        } else {
+            $articles = Ecommerce_article::all();
+        }
+
+
 
         return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles'));
     }

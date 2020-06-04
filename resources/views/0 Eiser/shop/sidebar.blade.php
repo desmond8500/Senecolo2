@@ -9,7 +9,7 @@
                     <ul class="list">
                         @foreach ($item->data as $data)
                         <li>
-                            <a href="{{$data->id}}">{{$data->categorie}}</a>
+                            <a href="{{route('boutique',['categorie'=>$data->categorie])}}">{{$data->categorie}}</a>
                         </li>
                         @endforeach
                     </ul>

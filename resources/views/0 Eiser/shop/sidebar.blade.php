@@ -15,7 +15,7 @@
                                 $class = '';
                         @endphp
                         <li class="{{$class}}">
-                            <a href="{{route('boutique',['categorie'=>$data->categorie])}}">{{$data->categorie}}</a>
+                            <a href="{{route('boutique',['categorie'=>$data->id])}}">{{$data->categorie}}</a>
                         </li>
                         @endforeach
                     </ul>

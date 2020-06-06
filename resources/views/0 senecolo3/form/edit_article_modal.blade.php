@@ -38,10 +38,10 @@
                         {{-- <input type="text" name="prix_vente"  hidden class="form-control" required> --}}
                      <div class="form-group col-sm-6">
                         <label>Categorie</label> <br>
-                            <select class="sorting" name="category" style="display: none;">
-                                <option>{{ $article->category }} </option>
+                        <select class="sorting" name="category" style="display: none;">
+                            <option value="{{ $article->id }}">{{ $article->category }} </option>
                         @foreach ($categories as $category)
-                            <option>{{ $category->categorie }} </option>
+                            <option value="{{ $category->id }}">{{ $category->categorie }} </option>
                         @endforeach
                         </select>
                     </div>

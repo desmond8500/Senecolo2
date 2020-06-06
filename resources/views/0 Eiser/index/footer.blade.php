@@ -33,6 +33,11 @@
                         <i class="fa fa-facebook mysize"></i> Facebook</a>
                     </a>
                 </li>
+                <li class="list-group-item">
+                    <a class="lien" href="https://www.linkedin.com/in/sen-ecolomarket-3958891a4" target="_blank">
+                        <i class="fa fa-linkedin mysize"></i> Linkedin</a>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="col-md-8">

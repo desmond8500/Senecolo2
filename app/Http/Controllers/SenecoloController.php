@@ -19,7 +19,7 @@ class SenecoloController extends Controller
     public  function boutique($categorie=null){
         $banner = (object) array(
             'title' => 'Boutique',
-            'message' => 'Les produits Senecolo market',
+            'message' => 'Les produits SEN EcoloMarket',
             'routes' => (object) array(
                 (object) array('name' => 'Boutique', 'link' => 'boutique')
             )
@@ -94,6 +94,24 @@ class SenecoloController extends Controller
             $img = $fichier->getClientOriginalName();
             Storage::disk('public')->put("Ecommerce/images/carousel/$img", File::get($fichier));
         }
+        return redirect()->back();
+    }
+
+    public function add_to_pub1(Request $request){
+        Storage::disk('public')->deleteDirectory("Ecommerce/images/pub/1");
+
+        $img = $request->file('pub1')->getClientOriginalName();
+        Storage::disk('public')->put("Ecommerce/images/pub/1/$img", File::get($request->file('pub1')));
+
+        return redirect()->back();
+    }
+
+    public function add_to_pub2(Request $request){
+        Storage::disk('public')->deleteDirectory("Ecommerce/images/pub/2");
+
+        $img = $request->file('pub2')->getClientOriginalName();
+        Storage::disk('public')->put("Ecommerce/images/pub/2/$img", File::get($request->file('pub2')));
+
         return redirect()->back();
     }
 

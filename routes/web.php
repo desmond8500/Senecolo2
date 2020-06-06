@@ -35,6 +35,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/backoffice/{section?}', 'SenecoloController@backoffice')->name('backoffice');
     Route::post('/backoffice/images/carousel/add', 'SenecoloController@add_to_carousel')->name('backoffice.add.to.carousel');
     Route::get('/backoffice/images/carousel/delete', 'SenecoloController@delete_carousel_image')->name('backoffice.delete.carousel.image');
+    Route::post('/backoffice/images/pub1/add', 'SenecoloController@add_to_pub1')->name('backoffice.add.to.pub1');
+    Route::post('/backoffice/images/pub2/add', 'SenecoloController@add_to_pub2')->name('backoffice.add.to.pub2');
 
 });
 

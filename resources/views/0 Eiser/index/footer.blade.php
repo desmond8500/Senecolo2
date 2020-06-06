@@ -1,4 +1,88 @@
-<footer class="footer-area section_gap">
+<style>
+    .mysize{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+
+    .lien{
+        color: gray;
+    }
+    footer{
+        padding-bottom: 50px;
+    }
+</style>
+
+<footer class="bg-light">
+    <hr>
+    <div class="row container">
+        <div class="col-md-4">
+            <h4 class="mb-4">Informations</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <a class="lien" href="">
+                        <i class="fa fa-phone mysize"></i> +221 77 555 76 37</a>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="lien" href="">
+                        <i class="fa fa-at mysize"></i> senecolomarket@gmail.com</a>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="lien" href="https://web.facebook.com/senecolomarket/?referrer=whatsapp&_rdc=1&_rdr" target="_blank">
+                        <i class="fa fa-facebook mysize"></i> Facebook</a>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <h4 class="mb-4">Contactez-nous</h4>
+            <form>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label text-right">Sujet</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Sujet de votre demande">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label text-right">Email</label>
+                    <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputPassword3" placeholder="Votre adresse électronique">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label text-right">Fichier</label>
+                    <div class="col-sm-10">
+                        <input type="file" name="fichier" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label text-right">Description</label>
+                    <div class="col-sm-10">
+                        <textarea name="description" class="form-control" cols="30" rows="5" placeholder="Description de votre besoin"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary float-right">Envoyer</button>
+                    </div>
+                </div>
+                </form>
+        </div>
+    </div>
+    <div class="col-md-12">
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    </div>
+
+
+</footer>
+
+
+{{--
+
+
+ <footer class="footer-area section_gap">
     <div class="container">
       <div class="row">
         @foreach ($footer->menu as $item)
@@ -30,15 +114,12 @@
         </div>
       </div>
       <div class="footer-bottom row align-items-center">
-        <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        <p class="footer-text m-0 col-lg-8 col-md-12">
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
         <div class="col-lg-4 col-md-12 footer-social">
           <a target="_blank" href="https://web.facebook.com/senecolomarket/"><i class="fa fa-facebook"></i></a>
           <a target="_blank" href="https://www.linkedin.com/mwlite/in/sen-ecolomarket-3958891a4"><i class="fa fa-linkedin"></i></a>
-          {{-- <a target="_blank" href="#"><i class="fa fa-twitter"></i></a> --}}
-          {{-- <a target="_blank" href="#"><i class="fa fa-dribbble"></i></a> --}}
         </div>
       </div>
     </div>
-  </footer>
+  </footer> --}}

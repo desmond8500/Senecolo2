@@ -3,11 +3,12 @@
 @section('content')
     @include('0 Eiser.index.banner')
 
-    <section class="cat_product_area section_gap">
+
+    <section class="cat_product_are section_ga">
       <div class="container">
         <div class="row flex-row-reverse">
           <div class="col-lg-9">
-            @include('0 Eiser.shop.topbar')
+            {{-- @include('0 Eiser.shop.topbar') --}}
 
             <div class="latest_product_inner">
                 @include('0 Eiser.shop.productlist')

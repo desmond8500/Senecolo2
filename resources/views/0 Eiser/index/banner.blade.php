@@ -1,4 +1,12 @@
-<section class="banner_area">
+<style>
+.banner_area2{
+    background: #F6F6F6;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+</style>
+
+<section class="banner_area2">
     <div class="banner_inner d-flex align-items-center">
         <div class="container">
             <div class="banner_content d-md-flex justify-content-between align-items-center">
@@ -10,6 +18,9 @@
                     <a href="{{route('index')}}">Acceuil</a>
                     @isset($banner->routes)
                         @foreach ($banner->routes as $route)
+                            @if (!$loop->last)
+                                /
+                            @endif
                             <a href="{{route($route->link)}}">{{$route->name}}</a>
                         @endforeach
                     @endisset

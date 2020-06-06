@@ -41,25 +41,25 @@
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label text-right">Sujet</label>
                     <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputEmail3" placeholder="Sujet de votre demande">
+                    <input type="text" class="form-control rounded-0" id="inputEmail3" placeholder="Sujet de votre demande">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label text-right">Email</label>
                     <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputPassword3" placeholder="Votre adresse électronique">
+                    <input type="email" class="form-control rounded-0" id="inputPassword3" placeholder="Votre adresse électronique">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label text-right">Fichier</label>
                     <div class="col-sm-10">
-                        <input type="file" name="fichier" class="form-control">
+                        <input type="file" name="fichier" class="form-control rounded-0">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label text-right">Description</label>
                     <div class="col-sm-10">
-                        <textarea name="description" class="form-control" cols="30" rows="5" placeholder="Description de votre besoin"></textarea>
+                        <textarea name="description" class="form-control rounded-0" cols="30" rows="5" placeholder="Description de votre besoin"></textarea>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@
           <div class="form-wrap">
             <form method="POST" action="{{route('newsletters.store')}}" class="form-inline">
                 @csrf
-              <input class="form-control" name="email"   placeholder = 'Votre adresse mail'" required="" type="email">
+              <input class="form-control rounded-0" name="email"   placeholder = 'Votre adresse mail'" required="" type="email">
               <button type="submit" class="click-btn btn btn-default">S'inscrire</button>
               <div style="position: absolute; left: -5000px;">
                 <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">

@@ -4,6 +4,9 @@
     padding-top: 10px;
     margin-bottom: 20px;
 }
+.banner_link{
+    color: gray;
+}
 </style>
 
 <section class="banner_area2">
@@ -15,13 +18,13 @@
                     <p>{{$banner->message ?? 'Banner Message'}}</p>
                 </div>
                 <div class="page_link">
-                    <a href="{{route('index')}}">Acceuil</a>
+                    <a class="banner_link" href="{{route('index')}}">Acceuil</a>
                     @isset($banner->routes)
                         @foreach ($banner->routes as $route)
                             @if (!$loop->last)
                                 /
                             @endif
-                            <a href="{{route($route->link)}}">{{$route->name}}</a>
+                            <a class="banner_link" href="{{route($route->link)}}">{{$route->name}}</a>
                         @endforeach
                     @endisset
                 </div>

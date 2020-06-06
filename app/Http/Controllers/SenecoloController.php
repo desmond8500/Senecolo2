@@ -7,6 +7,8 @@ use App\Models\Ecommerce_article;
 use App\Models\Ecommerce_category;
 use App\Models\Ecommerce_panier;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class SenecoloController extends Controller
 {
@@ -67,17 +69,10 @@ class SenecoloController extends Controller
         $categories = Ecommerce_category::all();
         $articles = Ecommerce_article::all();
 
-        switch ($section) {
-            case 'category':
-                $content = "0 senecolo3.component.backoffice.$section";
-                break;
-            case 'articles':
-                $content = "0 senecolo3.component.backoffice.$section";
-                break;
-
-            default:
-                $content = null;
-                break;
+        if ($section) {
+            $content = "0 senecolo3.component.backoffice.$section";
+        }else{
+            $content = null;
         }
 
         return view("0 senecolo3.pages.backoffice",compact('banner', 'content', 'categories', 'section', 'articles'));
@@ -92,5 +87,18 @@ class SenecoloController extends Controller
 
         redirect()->route('boutique');
 
+    }
+
+    public function add_to_carousel(Request $request){
+        foreach ($request->file('images') as $key => $fichier) {
+            $img = $fichier->getClientOriginalName();
+            Storage::disk('public')->put("Ecommerce/images/carousel/$img", File::get($fichier));
+        }
+        return redirect()->back();
+    }
+
+    public function delete_carousel_image(Request $request){
+        Storage::disk('public')->delete($request->img);
+        return redirect()->back();
     }
 }

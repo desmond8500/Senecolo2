@@ -1,7 +1,8 @@
 @php
     $menu = json_decode('[
         { "name": "Catégories", "section": "category"},
-        { "name": "Articles", "section": "articles"}
+        { "name": "Articles", "section": "articles"},
+        { "name": "Carousel", "section": "carousel"}
     ]');
 @endphp
 

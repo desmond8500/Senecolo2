@@ -1,5 +1,11 @@
 <?php
 
+use Illuminate\Routing\RouteGroup;
+
+Auth::routes(['verify' => true]);
+Route::get('/home', 'HomeController@index')->middleware('verified');
+
+
 // ====================================================================================
 // Main routes
 // ====================================================================================
@@ -25,11 +31,11 @@ Route::get('test', function () {
 // ====================================================================================
 // Backoffice
 // ====================================================================================
-Route::get('/backoffice/{section?}', 'SenecoloController@backoffice')->name('backoffice');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/backoffice/{section?}', 'SenecoloController@backoffice')->name('backoffice');
 
+});
 
-Auth::routes(['verify' => true]);
-Route::get('/home', 'HomeController@index')->middleware('verified');
 
 // ====================================================================================
 // Seeders
@@ -52,14 +58,7 @@ Route::post('generator_builder/generate-from-file', '\InfyOm\GeneratorBuilder\Co
 Route::resource('newsletters', 'NewsletterController');
 Route::resource('messages', 'MessageController');
 Route::resource('categories', 'CategorieController');
-
-
 Route::resource('articles', 'ArticleController');
-
-
 Route::resource('ecommerceCategories', 'Ecommerce_categoryController');
-
 Route::resource('ecommerceArticles', 'Ecommerce_articleController');
-
-
 Route::resource('ecommercePaniers', 'Ecommerce_panierController');

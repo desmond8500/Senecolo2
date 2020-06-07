@@ -17,6 +17,14 @@
                     <h2>{{$banner->title ?? 'Banner title'}}</h2>
                     <p>{{$banner->message ?? 'Banner Message'}}</p>
                 </div>
+                <div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Trouver un produit" aria-label="Trouver un produit" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Chercher</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="page_link">
                     <a class="banner_link" href="{{route('index')}}">Acceuil</a>
                     @isset($banner->routes)

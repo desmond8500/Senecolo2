@@ -12,35 +12,27 @@
     }
 </style>
 
-<footer class="bg-light">
+<footer class="bg-light pl-4 pr-4">
     <hr>
-    <div class="row container">
-        <div class="col-md-4">
+    <div class="row ">
+        <div class="col-md-3">
             <h4 class="mb-4">Informations</h4>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                     <a class="lien" href="">
-                        <i class="fa fa-phone mysize"></i> +221 77 555 76 37</a>
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a class="lien" href="">
-                        <i class="fa fa-at mysize"></i> senecolomarket@gmail.com</a>
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a class="lien" href="https://web.facebook.com/senecolomarket/?referrer=whatsapp&_rdc=1&_rdr" target="_blank">
-                        <i class="fa fa-facebook mysize"></i> Facebook</a>
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a class="lien" href="https://www.linkedin.com/in/sen-ecolomarket-3958891a4" target="_blank">
-                        <i class="fa fa-linkedin mysize"></i> Linkedin</a>
+                        <i class="fa fa-map-marker mysize"></i> Dakar / Sénégal</a>
                     </a>
                 </li>
             </ul>
+
+            <h4 class=" mt-5">Newsletter</h4>
+            <p class="text-secondary">Inscrivez-vous et recevez un bon de réduction </p>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Votre email">
+                <button type="submit" class="btn btn-primary mt-2">S'inscrire</button>
+            </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
             <h4 class="mb-4">Contactez-nous</h4>
             <form>
                 <div class="form-group row">
@@ -73,11 +65,37 @@
                     <button type="submit" class="btn btn-primary float-right">Envoyer</button>
                     </div>
                 </div>
-                </form>
+            </form>
         </div>
-    </div>
-    <div class="col-md-12">
+        <div class="col-md-3">
+            <h4 class="mb-4">Suivez-Nous</h4>
+            <ul class="list-group list-group-flush">
+                {{-- <li class="list-group-item">
+                    <a class="lien" href="">
+                        <i class="fa fa-phone mysize"></i> +221 77 555 76 37</a>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="lien" href="">
+                        <i class="fa fa-at mysize"></i> senecolomarket@gmail.com</a>
+                    </a>
+                </li> --}}
+                <li class="list-group-item">
+                    <a class="lien" href="https://web.facebook.com/senecolomarket/?referrer=whatsapp&_rdc=1&_rdr" target="_blank">
+                        <i class="fa fa-facebook mysize"></i> Facebook</a>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="lien" href="https://www.linkedin.com/in/sen-ecolomarket-3958891a4" target="_blank">
+                        <i class="fa fa-linkedin mysize"></i> Linkedin</a>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-md-12">
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        </div>
     </div>
 
 

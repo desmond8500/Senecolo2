@@ -11,7 +11,6 @@
             {{-- @include('0 Eiser.shop.topbar') --}}
 
             <div class="latest_product_inner">
-
 {{-- =========================================================== --}}
                 <div class="row">
                     <div class="col-md-8">
@@ -54,14 +53,12 @@
                         </div>
                     </div>
                 </div>
-
-
-
 {{-- =========================================================== --}}
 
-<hr class="pt-5">
+<hr class="">
 
 
+                @include('0 Eiser.section.feature_area')
                 @include('0 Eiser.shop.productlist')
             </div>
           </div>

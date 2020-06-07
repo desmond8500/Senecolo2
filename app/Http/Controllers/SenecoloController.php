@@ -34,9 +34,13 @@ class SenecoloController extends Controller
             $articles = Ecommerce_article::all();
         }
 
+        $features = json_decode('[
+            { "title": "Postez votre annonce", "description": "Rejoignez notre plateforme pour vendre facilement vos produits" },
+            { "title": "bla bla", "description": "bla bla" },
+            { "title": "bla bla", "description": "fdsfsdfsd" }
+        ]');
 
-
-        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie'));
+        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features'));
     }
     public  function formation(){
         $banner = (object) array(

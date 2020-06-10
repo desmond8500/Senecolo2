@@ -7,6 +7,7 @@ use App\Models\Ecommerce_article;
 use App\Models\Ecommerce_category;
 use App\Models\Ecommerce_panier;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
@@ -39,8 +40,8 @@ class SenecoloController extends Controller
             { "title": "bla bla", "description": "Acheter en toute confiance sur SEN EcoloMarket (avec une icone panier)" },
             { "title": "bla bla", "description": "Parcourez nos offres dans les meilleurs catégories. Tous types de produits recyclables et recyclés pour vos besoins" }
         ]');
-
-        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features'));
+        $user = Auth::user();
+        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features', 'user'));
     }
     public  function formation(){
         $banner = (object) array(

@@ -10,17 +10,13 @@
               <h2>{{$article->prix_vente}} CFA</h2>
               <ul class="list">
                 <li>
-                  <a class="active" href="#">
-                    <span>Categorie</span> : {{$article->categorie}}</a
-                  >
+                  <a class="active" href="#"> <span>Categorie</span> : {{$article->category}}</a>
                 </li>
                 <li>
                   <a href="#"> <span>Disponible</span> : {{ $article->quantite}} </a>
                 </li>
               </ul>
-              <p>
-                {!! nl2br($article->description) !!}
-              </p>
+              <p> {!! nl2br($article->description) !!} </p>
               <div class="product_count">
                 <label for="qty">Quantité:</label>
                 <input type="text" name="quantite" id="sst" maxlength="{{$article->quantite}}" value="1" title="Quantity:" class="input-text qty"
@@ -33,18 +29,20 @@
                 </button>
               </div>
               <div class="card_area">
-                <a class="main_btn" href="#">Ajouter au panier</a>
-                {{-- <a class="icon_btn" href="#">
-                  <i class="lnr lnr lnr-diamond"></i>
-                </a> --}}
-                <form action="{{ route('ecommercePaniers.store',['ecommercePanier'=>$article])}}" method="post">
-                    @csrf
-                    <input type="text" name="user_id" value="0" hidden>
-                    <input type="text" name="product_id" value="{{ $article->id}} " hidden>
-                    <button type="submit" class="icon_btn" href="#">
-                        <i class="lnr lnr lnr-heart"></i>
-                    </button>
-                </form>
+                @auth
+                    <a class="main_btn float-left" href="#">Ajouter au panier</a>
+
+                    <form action="{{ route('ecommercePaniers.store',['ecommercePanier'=>$article])}}" method="post">
+                        @csrf
+                        <input type="text" name="user_id" value="{{$user->id}}" hidden>
+                        <input type="text" name="product_id" value="{{ $article->id}} " hidden>
+                        <button type="submit" class="main_btn icon_btn" href="#">
+                            <i class="lnr lnr lnr-heart"></i>
+                        </button>
+                    </form>
+                    @else
+                    <a class="main_btn float-left" href="/login">Connectez-vous pour commander</a>
+                @endauth
               </div>
             </div>
           </div>
@@ -54,7 +52,7 @@
 <!--================End Single Product Area =================-->
 
 <!--================Product Description Area =================-->
-<section class="product_description_area">
+{{-- <section class="product_description_area">
     <div class="container">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
@@ -566,4 +564,4 @@
         </div>
     </div>
     </div>
-</section>
+</section> --}}

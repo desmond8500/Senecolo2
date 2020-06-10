@@ -35,9 +35,9 @@ class SenecoloController extends Controller
         }
 
         $features = json_decode('[
-            { "title": "Postez votre annonce", "description": "Rejoignez notre plateforme pour vendre facilement vos produits" },
-            { "title": "bla bla", "description": "bla bla" },
-            { "title": "bla bla", "description": "fdsfsdfsd" }
+            { "title": "Postez votre offre", "description": "Rejoignez le marché publiez facilement les produits que vous souhaitez vendre." },
+            { "title": "bla bla", "description": "Acheter en toute confiance sur SEN EcoloMarket (avec une icone panier)" },
+            { "title": "bla bla", "description": "Parcourez nos offres dans les meilleurs catégories. Tous types de produits recyclables et recyclés pour vos besoins" }
         ]');
 
         return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features'));

@@ -23,6 +23,16 @@
                         <i class="fa fa-map-marker mysize"></i> Dakar / Sénégal</a>
                     </a>
                 </li>
+                <li class="list-group-item">
+                    <a class="lien" href="">
+                        <i class="fa fa-phone mysize"></i> +221 77 555 76 37</a>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="lien" href="">
+                        <i class="fa fa-at mysize"></i> senecolomarket@gmail.com</a>
+                    </a>
+                </li>
             </ul>
 
             <h4 class=" mt-5">Newsletter</h4>
@@ -70,16 +80,7 @@
         <div class="col-md-3">
             <h4 class="mb-4">Suivez-Nous</h4>
             <ul class="list-group list-group-flush">
-                {{-- <li class="list-group-item">
-                    <a class="lien" href="">
-                        <i class="fa fa-phone mysize"></i> +221 77 555 76 37</a>
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a class="lien" href="">
-                        <i class="fa fa-at mysize"></i> senecolomarket@gmail.com</a>
-                    </a>
-                </li> --}}
+
                 <li class="list-group-item">
                     <a class="lien" href="https://web.facebook.com/senecolomarket/?referrer=whatsapp&_rdc=1&_rdr" target="_blank">
                         <i class="fa fa-facebook mysize"></i> Facebook</a>
@@ -90,14 +91,17 @@
                         <i class="fa fa-linkedin mysize"></i> Linkedin</a>
                     </a>
                 </li>
+                <li class="list-group-item">
+                    <a class="lien" href="https://www.instagram.com/p/CAid0Dmp-8Q/?igshid=r6l4wj1x1jph" target="_blank">
+                        <i class="fa fa-instagram mysize"></i> Instagram</a>
+                    </a>
+                </li>
             </ul>
 
         </div>
-        <div class="col-md-12">
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-        </div>
     </div>
-
+    <hr>
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 
 </footer>
 

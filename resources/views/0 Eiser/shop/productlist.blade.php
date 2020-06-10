@@ -4,7 +4,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="single-product">
                 <div class="product-img">
-                    <img class="card-img" src="{{asset("storage/Ecommerce/Articles/$article->id/images/$article->images")}}" alt="" />
+                    <img class="rounded mx-auto d-block" height="150px" src="{{asset("storage/Ecommerce/Articles/$article->id/images/$article->images")}}" alt="" />
                     {{-- <img class="card-img" src="{{asset("eiser/img/product/inspired-product/i1.jpg")}}" alt="" /> --}}
                     <div class="p_icon">
                         <a href="#" data-toggle="modal" data-target="#articleDetail{{$article->id}}">

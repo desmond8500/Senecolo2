@@ -8,7 +8,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addArticleLabel">Ajouter une catégorie</h5>
+          <h5 class="modal-title" id="addArticleLabel">Ajouter un nouvel article</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -23,11 +23,11 @@
                     </div>
                     <div class="form-group col-sm-6">
                         <label>Quantite</label>
-                        <input type="text" name="quantite" class="form-control" required>
+                        <input type="number" name="quantite" class="form-control" required value="1" min="1">
                     </div>
                     <div class="form-group col-sm-6">
                         <label>Prix</label>
-                        <input type="text" name="prix_achat" class="form-control" required>
+                        <input type="text" name="prix_achat" class="form-control" required min="1" value="0">
                         <input type="text" name="prix_vente" class="form-control" value="0" hidden>
                     </div>
                         {{-- <input type="text" name="prix_vente"  hidden class="form-control" required> --}}
@@ -46,7 +46,7 @@
                     </div>
                     <div class="form-group col-sm-12">
                         <label>Description</label>
-                        <textarea name="description"  rows="5" class="form-control"></textarea>
+                        <textarea name="description"  rows="5" class="form-control" placeholder="Description de l'article" required></textarea>
                     </div>
                 </div>
             </div>

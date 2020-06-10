@@ -33,7 +33,7 @@ class EiserController extends Controller
             'logo' => 'senecolo3/img/logo/logo V2.png',
             'link' => 'index',
             'menulist' => array(
-                array('name' => 'Accueil',     'route' => 'index' ,     "role"=> "user"),
+                array('name' => 'Acceuil',     'route' => 'index' ,     "role"=> "user"),
                 array('name' => 'Boutique',    'route' => 'boutique' ,  "role"=> "user"),
                 array('name' => 'Formation',   'route' => 'formation' , "role"=> "user"),
                 array('name' => 'Contact',     'route' => 'contact' ,   "role"=> "user"),

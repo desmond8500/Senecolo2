@@ -52,7 +52,7 @@
                     </div>
                     <div class="form-group col-sm-12">
                         <label>Description</label>
-                        <textarea name="description"  rows="5" class="form-control">{{ $article->description}} </textarea>
+                        <textarea name="description"  rows="5" class="form-control" required>{{ $article->description}} </textarea>
                     </div>
                 </div>
             </div>

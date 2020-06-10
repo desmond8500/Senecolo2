@@ -25,7 +25,7 @@
                 </div>
                 <div class="product-btm">
                     <a href="#" class="d-block">
-                    <h4>{{$article->article}}</h4>
+                    <h4 class="text-truncate">{{$article->article}}</h4>
                     </a>
                     <div class="mt-3">
                     {{-- <span class="mr-4">$25.00</span> --}}

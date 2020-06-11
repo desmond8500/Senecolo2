@@ -58,16 +58,25 @@
 <hr class="">
 
 
-                @include('0 Eiser.section.feature_area')
-                @include('0 Eiser.shop.productlist')
+                {{-- @include('0 Eiser.section.feature_area')
+                @include('0 Eiser.shop.productlist') --}}
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 ">
             @include('0 Eiser.shop.sidebar')
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="container mt-4">
+        <div class="row">
+             <div class="col-md-12">
+                @include('0 Eiser.section.feature_area')
+                @include('0 Eiser.shop.productlist')
+             </div>
+        </div>
     </section>
 @endsection
 

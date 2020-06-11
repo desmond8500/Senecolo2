@@ -37,7 +37,7 @@ class SenecoloController extends Controller
 
         $features = json_decode('[
             { "title": "Postez votre offre", "description": "Rejoignez le marché publiez facilement les produits que vous souhaitez vendre." },
-            { "title": "bla bla", "description": "Acheter en toute confiance sur SEN EcoloMarket (avec une icone panier)" },
+            { "title": "bla bla", "description": "Acheter en toute confiance sur SEN EcoloMarket." },
             { "title": "bla bla", "description": "Parcourez nos offres dans les meilleurs catégories. Tous types de produits recyclables et recyclés pour vos besoins" }
         ]');
         $user = Auth::user();

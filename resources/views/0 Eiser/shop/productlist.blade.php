@@ -1,7 +1,7 @@
 <div class="latest_product_inner">
     <div class="row">
     @foreach ($articles as $article)
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
             <div class="single-product">
                 <div class="product-img">
                     <img class="rounded mx-auto d-block" height="150px" src="{{asset("storage/Ecommerce/Articles/$article->id/images/$article->images")}}" alt="" />

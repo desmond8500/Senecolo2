@@ -1,3 +1,14 @@
+<style>
+    .mylist{
+        list-style-type:circle;
+        margin-left: 15px;
+    }
+    .listli{
+        color: black;
+
+    }
+</style>
+
 <div class="left_sidebar_area">
     @isset($sidebar)
         @foreach ($sidebar as $item)
@@ -6,7 +17,7 @@
                     <h3>{{$item->name}}</h3>
                 </div>
                 <div class="widgets_inner">
-                    <ul class="list">
+                    <ul class="mylist">
                         @foreach ($item->data as $data)
                         @php
                             if ($data->categorie == $categorie)
@@ -14,8 +25,8 @@
                             else
                                 $class = '';
                         @endphp
-                        <li class="{{$class}}">
-                            <a href="{{route('boutique',['categorie'=>$data->id])}}">{{$data->categorie}}</a>
+                        <li class="{{$class}} ">
+                            <a class="listli" href="{{route('boutique',['categorie'=>$data->id])}}">{{$data->categorie}}</a>
                         </li>
                         @endforeach
                     </ul>

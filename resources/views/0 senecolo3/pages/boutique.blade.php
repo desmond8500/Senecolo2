@@ -53,13 +53,6 @@
                         </div>
                     </div>
                 </div>
-{{-- =========================================================== --}}
-
-<hr class="">
-
-
-                {{-- @include('0 Eiser.section.feature_area')
-                @include('0 Eiser.shop.productlist') --}}
             </div>
           </div>
 

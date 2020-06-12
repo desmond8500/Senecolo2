@@ -36,9 +36,9 @@ class SenecoloController extends Controller
         }
 
         $features = json_decode('[
-            { "title": "Postez votre offre", "description": "Rejoignez le marché publiez facilement les produits que vous souhaitez vendre." },
-            { "title": "bla bla", "description": "Acheter en toute confiance sur SEN EcoloMarket." },
-            { "title": "bla bla", "description": "Parcourez nos offres dans les meilleurs catégories. Tous types de produits recyclables et recyclés pour vos besoins" }
+            { "title": "Postez votre offre", "description": "Rejoignez le marché publiez facilement les produits que vous souhaitez vendre.", "icon": "senecolo3/img/icons/020-carts.png" },
+            { "title": "Achat Sécurisé", "description": "Acheter en toute confiance sur SEN EcoloMarket.", "icon": "senecolo3/img/icons/014-padlock-1.png" },
+            { "title": "Service complet", "description": "Parcourez nos offres dans les meilleures catégories.", "icon": "senecolo3/img/icons/002-recycle.png" }
         ]');
         $user = Auth::user();
         return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features', 'user'));

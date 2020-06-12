@@ -43,7 +43,7 @@
             @csrf
 
             <div class="form-group">
-                <input type="file" class="form-control" name="images[]" multiple>
+                <input type="file" class="form-control" name="images[]" multiple required>
             </div>
             <button type="submit" class="btn btn-primary">Ajouter les images au carousel</button>
         </form>
@@ -52,7 +52,7 @@
             @csrf
 
             <div class="form-group">
-                <input type="file" class="form-control" name="pub1" multiple>
+                <input type="file" class="form-control" name="pub1" multiple required>
             </div>
             <button type="submit" class="btn btn-primary">Ajouter la pub 1</button>
         </form>
@@ -61,7 +61,7 @@
             @csrf
 
             <div class="form-group">
-                <input type="file" class="form-control" name="pub2" multiple>
+                <input type="file" class="form-control" name="pub2" multiple required>
             </div>
             <button type="submit" class="btn btn-primary">Ajouter la pub 2</button>
         </form>

@@ -81,11 +81,17 @@
                 @include('0 Eiser.shop.productlist') <hr>
 
                 <div class="main_title">
-                    <h2><span>Les catégories les plus consultés</span></h2>
+                    <h2><span>Les catégories d'articles</span></h2>
                     <p>aaa </p>
                 </div>
 
-                @include('0 Eiser.shop.articlelist') <hr>
+                @foreach ($sidebar as $item)
+                    <h3>{{$item->name}} </h3>
+                    @foreach ($item->data as $data)
+                        @include('0 Eiser.shop.articlelist')
+                    @endforeach
+                @endforeach
+
 
              </div>
         </div>

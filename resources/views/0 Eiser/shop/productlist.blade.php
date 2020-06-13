@@ -1,8 +1,17 @@
+<style>
+    .single-product{
+        /* border: 1px solid #71CD14; */
+        /* border: 1px solid lightgray;
+        border-radius: 5px;*/
+        background: white;
+    }
+</style>
+
 <div class="latest_product_inner">
     <div class="row">
     @foreach ($articles as $article)
         <div class="col-lg-3 col-md-6">
-            <div class="single-product">
+            <div class="single-product border rounded">
                 <div class="product-img">
                     <img class="rounded mx-auto d-block" height="150px" src="{{asset("storage/Ecommerce/Articles/$article->id/images/$article->images")}}" alt="" />
                     {{-- <img class="card-img" src="{{asset("eiser/img/product/inspired-product/i1.jpg")}}" alt="" /> --}}

@@ -12,7 +12,7 @@
 
 @include('0 Eiser.index.head')
 
-<body>
+<body class="bg-light">
   <header class="header_area">
         {{-- @include('0 Eiser.index.topmenu') --}}
         @include('0 Eiser.index.mainmenu')

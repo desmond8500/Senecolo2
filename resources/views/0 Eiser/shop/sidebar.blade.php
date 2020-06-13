@@ -9,15 +9,18 @@
     }
 </style>
 
-<div class="left_sidebar_area">
+<div class="left_sidebar_area ">
     @isset($sidebar)
         @foreach ($sidebar as $item)
-            <aside class="left_widgets p_filter_widgets">
+            <aside class="left_widgets p_filter_widgets bg-white">
                 <div class="l_w_title">
                     <h3>{{$item->name}}</h3>
                 </div>
                 <div class="widgets_inner">
                     <ul class="mylist">
+                        <li class="">
+                            <a class="listli" href="{{route('boutique')}}">Tous les articles</a>
+                        </li>
                         @foreach ($item->data as $data)
                         @php
                             if ($data->categorie == $categorie)

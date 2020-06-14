@@ -25,6 +25,11 @@
                             @endisset
                         </li>
                     @endforeach
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('backoffice')}}">BACKOFFICE</a>
+                    </li>
+                @endauth
 
                   {{-- <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
@@ -79,11 +84,7 @@
 
               <div class="col-lg-5 pr-0">
                 <ul class="nav navbar-nav navbar-right right_nav pull-right">
-                  <li class="nav-item">
-                    <a href="#" class="icons">
-                      <i class="ti-search" aria-hidden="true"></i>
-                    </a>
-                  </li>
+
 
                   <li class="nav-item">
                     <a href="#" class="icons">
@@ -91,11 +92,32 @@
                     </a>
                   </li>
 
-                  <li class="nav-item">
-                    <a href="#" class="icons">
-                      <i class="ti-user" aria-hidden="true"></i>
-                    </a>
-                  </li>
+                  @auth
+                    <li class="nav-item">
+                        <div class="dropdown dropleft">
+                            <a class="icons"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ti-user" aria-hidden="true"></i>
+                            </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <form action="{{route('logme')}}" method="POST">
+                                @csrf
+                                <input type="text" name="type" value="logout" hidden>
+                                <button type="submit" class="btn btn-block btn-primary">Déconnexion</button>
+                            </form>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </div>
+                    </li>
+
+                    @else
+                    <li class="nav-item">
+                        <a href="{{route('loginpage')}}" class="icons">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                  @endauth
 
                   <li class="nav-item">
                     <a href="#" class="icons">

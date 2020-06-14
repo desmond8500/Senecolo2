@@ -14,6 +14,9 @@ class AddUserToEcommerceArticles extends Migration
     public function up()
     {
         Schema::table('ecommerce_articles', function (Blueprint $table) {
+            $table->string('user_id')->nullable();
+            $table->string('statut')->nullable();
+            $table->string('unite')->nullable();
             //
         });
     }

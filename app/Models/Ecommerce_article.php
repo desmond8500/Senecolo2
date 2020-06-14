@@ -37,7 +37,10 @@ class Ecommerce_article extends Model
         'quantite',
         'category',
         'images',
-        'type'
+        'type',
+        'user_id',
+        'statut',
+        'unite'
     ];
 
     /**
@@ -55,6 +58,9 @@ class Ecommerce_article extends Model
         'category' => 'string',
         'images' => 'string',
         'type' => 'string',
+        'user_id' => 'string',
+        'statut' => 'string',
+        'unite' => 'string',
     ];
 
     /**

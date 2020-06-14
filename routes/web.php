@@ -24,8 +24,14 @@ Route::get('/panier/add/{product_id?} ', 'SenecoloController@add_to_card')->name
 Route::get('/formation/index', 'SenecoloController@formation')->name('formation');
 Route::get('/contact', 'SenecoloController@contact')->name('contact');
 
+Route::post('/logme', 'SenecoloController@logme')->name('logme');
+Route::get('/loginpage', 'SenecoloController@loginpage')->name('loginpage');
+
 Route::get('test', function () {
     return view('0 Eiser.pages.product');
+});
+Route::get('test2', function () {
+    return view('0 senecolo3.pages.login');
 });
 
 // ====================================================================================

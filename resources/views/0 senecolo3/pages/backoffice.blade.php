@@ -4,9 +4,9 @@
 
 @php
     $menu = json_decode('[
-        { "name": "Catégories", "section": "category"},
-        { "name": "Articles", "section": "articles"},
-        { "name": "Carousel", "section": "carousel"}
+        { "name": "Catégories", "section": "category", "type": "admin" },
+        { "name": "Articles", "section": "articles", "type": "user" },
+        { "name": "Carousel", "section": "carousel", "type": "admin" }
     ]');
 @endphp
 
@@ -31,9 +31,20 @@
                     $class = '';
 
             @endphp
-            <li class=" nav-item {{$class}}">
-                <a href="{{route('backoffice',['section'=>$item->section])}}" class="nav-link">{{$item->name}}</a>
-            </li>
+            @if ($user->role =='user' && $item->type!='admin')
+
+                <li class=" nav-item {{$class}}">
+                    <a href="{{route('backoffice',['section'=>$item->section])}}" class="nav-link">{{$item->name}}</a>
+                </li>
+
+                @else
+
+                <li class=" nav-item {{$class}}">
+                    <a href="{{route('backoffice',['section'=>$item->section])}}" class="nav-link">{{$item->name}}</a>
+                </li>
+
+            @endif
+
             @endforeach
 
     </ul>

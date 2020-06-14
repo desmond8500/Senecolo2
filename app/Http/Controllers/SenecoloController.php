@@ -85,7 +85,9 @@ class SenecoloController extends Controller
             $content = null;
         }
 
-        return view("0 senecolo3.pages.backoffice",compact('banner', 'content', 'categories', 'section', 'articles'));
+        $user = Auth::user();
+
+        return view("0 senecolo3.pages.backoffice",compact('banner', 'content', 'categories', 'section', 'articles', 'user'));
     }
 
     public function add_to_card($product_id){
@@ -128,5 +130,32 @@ class SenecoloController extends Controller
     public function delete_carousel_image(Request $request){
         Storage::disk('public')->delete($request->img);
         return redirect()->back();
+    }
+
+
+    // auth
+
+    public function logme(Request $request){
+        if (isset($request->type)) {
+            if ($request->type=="login") {
+                $credentials = $request->only('email', 'password');
+
+                if (Auth::attempt($credentials)) {
+                    // Authentication passed...
+                    return redirect()->route('boutique');
+                }
+            }else {
+                Auth::logout();
+                return redirect()->route('boutique');
+            }
+            # code...
+        } else {
+            # code...
+        }
+
+    }
+
+    public function loginpage(){
+        return view('0 senecolo3.pages.login');
     }
 }

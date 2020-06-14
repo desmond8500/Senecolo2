@@ -36,8 +36,7 @@ class EiserController extends Controller
                 array('name' => 'Accueil',     'route' => 'index' ,     "role"=> "user"),
                 array('name' => 'Boutique',    'route' => 'boutique' ,  "role"=> "user"),
                 array('name' => 'Formation',   'route' => 'formation' , "role"=> "user"),
-                array('name' => 'Contact',     'route' => 'contact' ,   "role"=> "user"),
-                array('name' => 'Backoffice',  'route' => 'backoffice',    "role"=> "admin")
+                array('name' => 'Contact',     'route' => 'contact' ,   "role"=> "user")
             )
         );
         return  $data;

@@ -17,6 +17,7 @@
             <div class="modal-body">
                 @csrf
                 <div class="row">
+                    <input type="text" name="user_id" value="{{$user->id}}" hidden>
                     <div class="form-group col-sm-6">
                         <label>Nom de l'article</label>
                         <input type="text" name="article" class="form-control" required>

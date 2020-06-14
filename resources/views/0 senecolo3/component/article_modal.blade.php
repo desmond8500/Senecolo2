@@ -41,7 +41,7 @@
                         </button>
                     </form>
                     @else
-                    <a class="main_btn float-left" href="/login">Connectez-vous pour commander</a>
+                    <a class="main_btn float-left" href="{{route('login')}}">Connectez-vous pour commander</a>
                 @endauth
               </div>
             </div>

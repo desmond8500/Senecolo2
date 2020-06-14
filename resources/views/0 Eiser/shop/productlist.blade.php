@@ -20,12 +20,15 @@
                         <a href="#" data-toggle="modal" data-target="#articleDetail{{$article->id}}">
                             <i class="ti-eye"></i>
                         </a>
-                        <a href="#">
+                        {{-- <a href="#">
                             <i class="ti-heart"></i>
-                        </a>
-                        <a href="#">
+                        </a> --}}
+                        @auth
+                        <a href="{{route('card.add',['user_id'=>$user->id, 'article_id'=>$article->id])}}">
                             <i class="ti-shopping-cart"></i>
                         </a>
+
+                        @endauth
                         {{-- <a href="{{ route('card.add',['product_id'=>$article->id])}}">
                             <i class="ti-shopping-cart"></i>
                         </a> --}}

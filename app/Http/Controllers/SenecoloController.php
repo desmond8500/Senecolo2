@@ -92,15 +92,13 @@ class SenecoloController extends Controller
         return view("0 senecolo3.pages.backoffice",compact('banner', 'content', 'categories', 'section', 'articles', 'user'));
     }
 
-    public function add_to_card($product_id){
+    public function add_to_card(Request $request){
         $card = new Ecommerce_panier();
-
-        $card->user_id = 0;
-        $card->product_id = $product_id;
+        $card->user_id = $request->user_id;
+        $card->product_id = $request->article_id;
         $card->save();
 
-        redirect()->route('boutique');
-
+        return redirect()->back();
     }
 
     public function add_to_carousel(Request $request){

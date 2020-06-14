@@ -81,16 +81,14 @@
                 @include('0 Eiser.shop.productlist') <hr>
 
                 <div class="main_title">
-                    <h2><span>Les catégories d'articles</span></h2>
-                    <p>aaa </p>
+                    <h2><span>Les articles recyclés les plus demandés</span></h2>
                 </div>
+                @include('0 Eiser.shop.articlelist', ['articles'=>$recyclables])
 
-                @foreach ($sidebar as $item)
-                    <h3>{{$item->name}} </h3>
-                    @foreach ($item->data as $data)
-                        @include('0 Eiser.shop.articlelist')
-                    @endforeach
-                @endforeach
+                <div class="main_title">
+                    <h2><span>Les articles recyclables les plus demandés</span></h2>
+                </div>
+                @include('0 Eiser.shop.articlelist', ['articles'=>$recycles])
 
 
              </div>

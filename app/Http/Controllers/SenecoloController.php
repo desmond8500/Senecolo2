@@ -29,10 +29,15 @@ class SenecoloController extends Controller
                 (object) array('name' => 'Catégories', 'data' => Ecommerce_category::all())
         );
 
+        $recyclables = null;
+        $recycles = null;
+
         if ($categorie) {
             $articles = Ecommerce_article::where('category',$categorie)->get();
         } else {
             $articles = Ecommerce_article::all();
+            $recyclables = Ecommerce_article::where('type','Recyclable')->get();
+            $recycles = Ecommerce_article::where('type','Recyclé')->get();
         }
 
         $features = json_decode('[
@@ -41,7 +46,7 @@ class SenecoloController extends Controller
             { "title": "Service complet", "description": "Parcourez nos offres dans les meilleures catégories.", "icon": "senecolo3/img/icons/002-recycle.png", "fa": "fa fa-recycle" }
         ]');
         $user = Auth::user();
-        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features', 'user'));
+        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features', 'user', 'recyclables', 'recycles'));
     }
     public  function formation(){
         $banner = (object) array(

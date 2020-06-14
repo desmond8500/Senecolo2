@@ -35,6 +35,14 @@
                         <label>Prix de vente</label>
                         <input type="text" name="prix_vente" class="form-control" value="0" value="{{ $article->prix_vente }}">
                     </div>
+                    <div class="form-group col-sm-6">
+                        <label>Type</label> <br>
+                        <select class="sorting" name="type" style="display: none;">
+                            <option>{{ $article->type }}</option>
+                            <option>Recyclable</option>
+                            <option>Recyclé</option>
+                        </select>
+                    </div>
                         {{-- <input type="text" name="prix_vente"  hidden class="form-control" required> --}}
                      <div class="form-group col-sm-6">
                         <label>Categorie</label> <br>

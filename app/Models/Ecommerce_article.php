@@ -23,7 +23,7 @@ class Ecommerce_article extends Model
     use SoftDeletes;
 
     public $table = 'ecommerce_articles';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -36,7 +36,8 @@ class Ecommerce_article extends Model
         'prix_vente',
         'quantite',
         'category',
-        'images'
+        'images',
+        'type'
     ];
 
     /**
@@ -52,7 +53,8 @@ class Ecommerce_article extends Model
         'prix_vente' => 'string',
         'quantite' => 'string',
         'category' => 'string',
-        'images' => 'string'
+        'images' => 'string',
+        'type' => 'string',
     ];
 
     /**
@@ -61,8 +63,8 @@ class Ecommerce_article extends Model
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
-    
+
 }

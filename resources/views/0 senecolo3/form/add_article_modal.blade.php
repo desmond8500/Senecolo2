@@ -39,6 +39,13 @@
                         @endforeach
                         </select>
                     </div>
+                    <div class="form-group col-sm-6">
+                        <label>Type</label> <br>
+                        <select class="sorting" name="type" style="display: none;">
+                        <option>Recyclable</option>
+                        <option>Recyclé</option>
+                        </select>
+                    </div>
 
                     <div class="form-group col-sm-6">
                         <label>Images</label>

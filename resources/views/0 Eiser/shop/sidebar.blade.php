@@ -7,9 +7,13 @@
         color: black;
 
     }
+    .left_sidebar_area{
+        border:1px solid #d3d3d3;
+        border-radius: 5px;
+    }
 </style>
 
-<div class="left_sidebar_area ">
+<div class="left_sidebar_area">
     @isset($sidebar)
         @foreach ($sidebar as $item)
             <aside class="left_widgets p_filter_widgets bg-white">

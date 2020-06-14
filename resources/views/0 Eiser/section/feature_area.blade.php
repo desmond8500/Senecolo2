@@ -4,7 +4,7 @@
     }
     .feature_description{
         height: 90px;
-        border: 1px solid #71CD14;
+        border: 1px solid #d3d3d3;
         border-radius: 15px;
     }
     .iconn{

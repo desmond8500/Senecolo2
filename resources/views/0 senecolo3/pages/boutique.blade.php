@@ -99,7 +99,7 @@
 @section('link')
 <style>
     .carousel1{
-        border: 1px solid #EFF2F3;
+        border: 1px solid #d3d3d3;
 }
     .pub{
         border: 1px solid #EFF2F3;

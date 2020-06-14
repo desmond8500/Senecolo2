@@ -1,6 +1,7 @@
 <div class="latest_product_inner">
     <div class="row">
-    @foreach ($articles as $article)
+    @if ($articles)
+        @foreach ($articles as $article)
         <div class="col-lg-3 col-md-6">
             <div class="single-product">
                 <div class="product-img">
@@ -35,6 +36,7 @@
             </div>
         </div>
     @endforeach
+    @endif
 
     </div>
 </div>

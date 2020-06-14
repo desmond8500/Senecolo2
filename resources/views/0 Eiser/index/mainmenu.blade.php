@@ -112,7 +112,7 @@
 
                     @else
                     <li class="nav-item">
-                        <a href="{{route('loginpage')}}" class="icons">
+                        <a href="{{route('login')}}" class="icons">
                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                         </a>
                     </li>

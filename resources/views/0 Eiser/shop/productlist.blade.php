@@ -1,3 +1,4 @@
+
 <style>
     .single-product{
         /* border: 1px solid #71CD14; */
@@ -10,7 +11,7 @@
 <div class="latest_product_inner">
     <div class="row">
     @foreach ($articles as $article)
-        <div class="col-lg-3 col-md-6">
+        <div class="{{$article_class ?? 'col-md-3'}}">
             <div class="single-product border rounded">
                 <div class="product-img">
                     <img class="rounded mx-auto d-block" height="150px" src="{{asset("storage/Ecommerce/Articles/$article->id/images/$article->images")}}" alt="" />

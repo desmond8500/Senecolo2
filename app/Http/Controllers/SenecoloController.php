@@ -34,6 +34,7 @@ class SenecoloController extends Controller
 
         if ($categorie) {
             $articles = Ecommerce_article::where('category',$categorie)->get();
+            return view("0 senecolo3.pages.categoryList", compact('banner', 'sidebar', 'articles', 'categorie', 'user'));
         } else {
             $articles = Ecommerce_article::all();
             $recyclables = Ecommerce_article::where('type','Recyclable')->get();

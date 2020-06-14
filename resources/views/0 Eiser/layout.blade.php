@@ -20,7 +20,9 @@
 
     @yield('content')
 
+    @section('footer')
     @include('0 Eiser.index.footer')
+    @show
 
     @include('0 Eiser.index.script')
 </body>

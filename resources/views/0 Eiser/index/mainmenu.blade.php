@@ -119,11 +119,11 @@
 
                   @endauth
 
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                     <a href="#" class="icons">
                       <i class="ti-heart" aria-hidden="true"></i>
                     </a>
-                  </li>
+                  </li> --}}
                 </ul>
               </div>
             </div>

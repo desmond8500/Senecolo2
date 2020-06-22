@@ -127,6 +127,14 @@ class SenecoloController extends Controller
         return redirect()->back();
     }
 
+    public function add_to_pub3(Request $request){
+        foreach ($request->file('images') as $key => $fichier) {
+            $img = $fichier->getClientOriginalName();
+            Storage::disk('public')->put("Ecommerce/images/pub/3/$img", File::get($fichier));
+        }
+        return redirect()->back();
+    }
+
     public function delete_carousel_image(Request $request){
         Storage::disk('public')->delete($request->img);
         return redirect()->back();

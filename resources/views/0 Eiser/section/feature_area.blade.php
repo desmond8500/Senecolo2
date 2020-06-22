@@ -17,10 +17,10 @@
 <section class="row ">
     @if ($features)
         @foreach ($features as $feature)
-        <div class="col-md-4 my-5">
+        <div class="col-md-4 my-1">
             <div class="media bg-white p-2 feature_description">
                 {{-- <img src="{{asset($feature->icon)}}" class="mr-3" alt="..." height="50px"> --}}
-                <i class="{{ $feature->fa }} fa-2x iconn text-success"></i>
+                <i class="{{ $feature->fa }} fa-2x iconn text-success align-self-center"></i>
                 <div class="media-body">
                     <h5 class="mt-0 text-success">{{$feature->title ?? 'Feature Title'}}</h5>
                     {{$feature->description ?? 'Feature description'}}

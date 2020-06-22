@@ -67,7 +67,8 @@
 
     <section class="container mt-4">
         <div class="row">
-             <div class="col-lg-12">
+            <div class="col-lg-12">
+
 
             </div>
              <div class="col-md-12">
@@ -75,18 +76,44 @@
 
                 <div class="main_title">
                     <h2><span>Les produits les plus demandés</span></h2>
-                    <p>Top 3 des articles que nos clietns achètent </p>
+                    <p>Top des articles les plus achetés </p>
                 </div>
 
                 @include('0 Eiser.shop.productlist') <hr>
 
+                <div class=" rounded">
+                    <div id="carouselpubControls" class="carousel slide mycarousel" data-ride="carousel">
+                            <div class="carousel-inner">
+                                @foreach (Storage::disk('public')->files("Ecommerce/images/pub/3") as $image)
+                                    @php
+                                        if($loop->first)
+                                            $active = 'active';
+                                        else
+                                            $active = '';
+                                    @endphp
+                                    <div class="carousel-item carousel1 {{$active}} mb-4 rounded" >
+                                        <img src="{{asset("storage/$image")}}" class="d-block w-100" alt="...">
+                                    </div>
+                                @endforeach
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselpubControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselpubControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                </div>
+
                 <div class="main_title">
-                    <h2><span>Les articles recyclés les plus demandés</span></h2>
+                    <h2><span>Les produits recyclés</span></h2>
                 </div>
                 @include('0 Eiser.shop.articlelist', ['articles'=>$recyclables])
 
                 <div class="main_title">
-                    <h2><span>Les articles recyclables les plus demandés</span></h2>
+                    <h2><span>Les produits recyclables</span></h2>
                 </div>
                 @include('0 Eiser.shop.articlelist', ['articles'=>$recycles])
 
@@ -98,11 +125,16 @@
 
 @section('link')
 <style>
-    .carousel1{
-        border: 1px solid #d3d3d3;
+.carousel1{
+    border: 1px solid #d3d3d3;
 }
-    .pub{
-        border: 1px solid #EFF2F3;
+.pub{
+    border: 1px solid #EFF2F3;
+}
+.pubBanner{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
 }
 </style>
 

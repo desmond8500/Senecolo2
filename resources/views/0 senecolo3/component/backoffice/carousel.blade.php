@@ -95,6 +95,22 @@
         </div>
     </div>
     <div class="col-md-12 text-secondary my-4">
-        S
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <strong>Information</strong> <br>
+            Pour ajouter une image il suffit que cliquer sur le bouton parcourir, sélectionner l'image en question et appuyer sur ajouter pour envoyer l'image. <br>
+            Pour le carousel et la pub3 vous pouvez charger plusieurs images à la fois. <br>
+            Pub 1 et 2 sont limités à une image chacune. <br><br>
+            Voilà ci dessous les dimensions recommandées :
+            <ol>
+                <li>Carousel = 900 * 570</li>
+                <li>Pub 1 et 2 = 300 * 203</li>
+                <li>Pub3 = 1000 * 200</li>
+            </ol>
+        </div>
+    </div>
 
 </div>

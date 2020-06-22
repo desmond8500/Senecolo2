@@ -57,11 +57,18 @@
         @include($content)
         @else
 
-        <p>
+        <div class="col-md-12 text-secondary mb-4">
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <strong>Information</strong> <br>
             Cette section permet d'éditer les catégories et les articles qui ont été créés. <br>
-        Cette interface ne sera visible que pour les vendeurs et les administrateurs. <br>
-        Les données affichées seront filtrée en fonction du niveau d'accès.
-        </p>
+            Cette interface ne sera visible que pour les vendeurs et les administrateurs. <br>
+            Les données affichées seront filtrée en fonction du niveau d'accès.
+            </div>
+        </div>
     @endisset
 </section>
 

@@ -1,4 +1,14 @@
 <div class="row">
+    <div class="col-md-12 text-secondary mb-4">
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <strong>Information</strong> <br>
+            Pour modifier une catégorie, il suffit de modifier le texte puis d'appuyer sur le bouton <div class="btn btn-outline-primary"><i class="fa fa-edit"></i> </div>
+        </div>
+    </div>
     <div class="col-md-12">
         @include('0 senecolo3.form.add_category_modal')
         @include('0 senecolo3.form.add_article_modal')

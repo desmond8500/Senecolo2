@@ -1,6 +1,8 @@
 <div class="row">
     <div class="col-md-8">
         <div class="row bg-light p-2">
+
+
             <div class="col-md-12">
                 <h4>Images du carousel</h4>
             </div>
@@ -92,5 +94,7 @@
             @endforeach
         </div>
     </div>
+    <div class="col-md-12 text-secondary my-4">
+        S
 
 </div>

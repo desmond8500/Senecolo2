@@ -9,9 +9,9 @@
               <h3>{{$article->article}}</h3>
               <h2>{{$article->prix_vente}} CFA</h2>
               <ul class="list">
-                <li>
+                {{-- <li>
                   <a class="active" href="#"> <span>Categorie</span> : {{$article->category}}</a>
-                </li>
+                </li> --}}
                 <li>
                   <a href="#"> <span>Disponible</span> : {{ $article->quantite}} </a>
                 </li>

@@ -25,11 +25,18 @@
                             @endisset
                         </li>
                     @endforeach
-                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#posterAnnonce">Poster une annonce</a>
+
+                        {{-- <a type="button" class="btn btn-primary btn-sm text-white {{ $class ?? ''}}" data-toggle="modal" data-target="#addArticle">
+    <i class="fa fa-plus"></i> Ajouter un Article
+</a> --}}
+                    </li>
+                {{-- @auth
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('backoffice')}}">BACKOFFICE</a>
                     </li>
-                @endauth
+                @endauth --}}
 
                   {{-- <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
@@ -98,15 +105,17 @@
                             <a class="icons"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="ti-user" aria-hidden="true"></i>
                             </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <form action="{{route('logme')}}" method="POST">
-                                @csrf
-                                <input type="text" name="type" value="logout" hidden>
-                                <button type="submit" class="btn btn-block btn-primary">Déconnexion</button>
-                            </form>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form action="{{route('logme')}}" method="POST">
+                                    @csrf
+                                    <input type="text" name="type" value="logout" hidden>
+                                    <button type="submit" class="btn btn-block btn-primary">Déconnexion</button>
+                                </form>
+                                @auth
+                                    <a class="dropdown-item" href="{{route('backoffice')}}">Backoffice</a>
+                                @endauth
+                                {{-- <a class="dropdown-item" href="#">Something else here</a> --}}
+                            </div>
                         </div>
                     </li>
 
@@ -131,3 +140,4 @@
         </nav>
       </div>
     </div>
+

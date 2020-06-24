@@ -11,7 +11,7 @@
             {{-- @include('0 Eiser.shop.topbar') --}}
 
             <div class="latest_product_inner">
-{{-- =========================================================== --}}
+            {{-- =========================================================== --}}
                 <div class="row">
                     <div class="col-md-8 p-0 m-0">
                          <div id="carouselExampleControls" class="carousel slide mycarousel" data-ride="carousel">
@@ -121,6 +121,11 @@
              </div>
         </div>
     </section>
+
+    <section>
+        @include('0 senecolo3.form.annonce_post_form')
+    </section>
+
 @endsection
 
 @section('link')

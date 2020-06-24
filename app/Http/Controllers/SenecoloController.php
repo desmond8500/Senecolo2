@@ -47,8 +47,9 @@ class SenecoloController extends Controller
             $recyclables = Ecommerce_article::where('type','Recyclable')->paginate(8);
             $recycles = Ecommerce_article::where('type','Recyclé')->paginate(8);
         }
+        $categories = Ecommerce_category::all();
 
-        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features', 'user', 'recyclables', 'recycles'));
+        return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles','categorie', 'categories', 'features', 'user', 'recyclables', 'recycles'));
     }
     public  function formation(){
         $banner = (object) array(
@@ -58,7 +59,8 @@ class SenecoloController extends Controller
                 (object) array('name' => 'Formation', 'link' => 'formation')
             )
         );
-        return view("0 senecolo3.pages.blog",compact('banner'));
+        $categories = Ecommerce_category::all();
+        return view("0 senecolo3.pages.blog",compact('banner', 'categories'));
     }
     public  function contact(){
         $banner = (object) array(
@@ -68,7 +70,8 @@ class SenecoloController extends Controller
                (object) array( 'name'=> 'Contacts', 'link'=>'contact')
             )
         );
-        return view("0 senecolo3.pages.contact",compact('banner'));
+        $categories = Ecommerce_category::all();
+        return view("0 senecolo3.pages.contact",compact('banner', 'categories'));
     }
     public  function backoffice($section=null){
         $banner = (object) array(

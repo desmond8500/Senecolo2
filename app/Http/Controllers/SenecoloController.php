@@ -40,12 +40,12 @@ class SenecoloController extends Controller
         ]');
 
         if ($categorie) {
-            $articles = Ecommerce_article::where('category',$categorie)->get();
+            $articles = Ecommerce_article::where('category',$categorie)->paginate(4);
             return view("0 senecolo3.pages.categoryList", compact('banner', 'sidebar', 'articles', 'categorie', 'user'));
         } else {
-            $articles = Ecommerce_article::all();
-            $recyclables = Ecommerce_article::where('type','Recyclable')->get();
-            $recycles = Ecommerce_article::where('type','Recyclé')->get();
+            $articles = Ecommerce_article::paginate(4);
+            $recyclables = Ecommerce_article::where('type','Recyclable')->paginate(4);
+            $recycles = Ecommerce_article::where('type','Recyclé')->paginate(4);
         }
 
         return view("0 senecolo3.pages.boutique",compact('banner','sidebar', 'articles', 'categorie', 'features', 'user', 'recyclables', 'recycles'));

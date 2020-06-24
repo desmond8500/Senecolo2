@@ -110,12 +110,12 @@
                 <div class="main_title">
                     <h2><span>Les produits recyclés</span></h2>
                 </div>
-                @include('0 Eiser.shop.articlelist', ['articles'=>$recyclables])
+                @include('0 Eiser.shop.articlelist', ['articles'=>$recycles])
 
                 <div class="main_title">
                     <h2><span>Les produits recyclables</span></h2>
                 </div>
-                @include('0 Eiser.shop.articlelist', ['articles'=>$recycles])
+                @include('0 Eiser.shop.articlelist', ['articles'=>$recyclables])
 
 
              </div>

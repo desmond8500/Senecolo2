@@ -67,30 +67,61 @@
 <div class="modal fade" id="posterAnnonce" tabindex="-1" role="dialog" aria-labelledby="posterAnnonceLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header annonce_top">
           <h5 class="modal-title" id="posterAnnonceLabel">Publier une annonce</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form action="{{ route('ecommerceArticles.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{route('register')}}" method="post">
             <div class="modal-body">
-                <div class="text-center mb-4">
-                    Connectez-vous pour pouvoir publier une annonce
+            {{-- <div class="text-center mb-4">
+                Connectez-vous pour pouvoir publier une annonce
+            </div>
+            <div class="text-center">
+                <a href="{{route('login')}}" class="btn btn-primary"> Connexion </a>
+                <a href="{{route('register')}}" class="btn btn-primary"> Inscription </a>
+            </div>
+
+            <hr> --}}
+                @csrf
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label>Nom complet</label>
+                        <input type="text" name="name" class="form-control" placeholder="Prénom et Nom" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>Email</label>
+                        <input type="email" name="article" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>Mot de passe</label>
+                        <input type="password" name="password" class="form-control" placeholder="Mot de passe" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>Confirmation du Mot de passe</label>
+                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmation du mot de passe" required>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <a href="{{route('login')}}" class="btn btn-primary"> Connexion </a>
-                    <a href="{{route('register')}}" class="btn btn-primary"> Inscription </a>
-                </div>
+                <p class="text-center mt-3"> En nous rejoignant vous acceptez les <a href="">conditions d'utilisation </a> de Sen Ecolomarket </p>
 
             </div>
             <div class="modal-footer">
+                <button type="submit" class="btn btn-primary rounded-pill text-center">Envoyer</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
             </div>
         </form>
       </div>
     </div>
 </div>
+
+<style>
+.annonce_top{
+    border-top: 4px solid #0B7AED;
+}
+
+
+</style>
 
 
 @endauth

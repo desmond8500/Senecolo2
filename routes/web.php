@@ -44,6 +44,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/backoffice/images/pub1/add', 'SenecoloController@add_to_pub1')->name('backoffice.add.to.pub1');
     Route::post('/backoffice/images/pub2/add', 'SenecoloController@add_to_pub2')->name('backoffice.add.to.pub2');
     Route::post('/backoffice/images/pub3/add', 'SenecoloController@add_to_pub3')->name('backoffice.add.to.pub3');
+    Route::post('/backoffice/images/background/add', 'SenecoloController@add_to_background')->name('backoffice.add.to.background');
 
 });
 

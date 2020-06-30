@@ -94,6 +94,24 @@
             @endforeach
         </div>
     </div>
+    <div class="col-md-12">
+        @foreach (Storage::disk('public')->files("Ecommerce/images/background") as $image)
+        <div class="col-md-6 alert-primary p-2">
+            <h4>Fond de page</h4>
+            <img src="{{asset("storage/$image")}} " alt="" class="img-fluid" height="200px">
+            <a href="{{ route('backoffice.delete.carousel.image',['img'=>$image])}} ">Supprimer</a>
+
+            <form action="{{route('backoffice.add.to.background')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+
+                <div class="form-group">
+                    <input type="file" class="form-control" name="background">
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter le fond d'écran</button>
+            </form>
+        </div>
+        @endforeach
+    </div>
     <div class="col-md-12 text-secondary my-4">
         <div class="alert alert-primary alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">

@@ -138,6 +138,16 @@ class SenecoloController extends Controller
         return redirect()->back();
     }
 
+    public function add_to_background(Request $request){
+        Storage::disk('public')->deleteDirectory("Ecommerce/images/background");
+
+        $img = $request->file('background')->getClientOriginalName();
+        Storage::disk('public')->put("Ecommerce/images/background/background.jpg", File::get($request->file('background')));
+        // Storage::disk('public')->put("Ecommerce/images/background/$img", File::get($request->file('background')));
+
+        return redirect()->back();
+    }
+
     public function delete_carousel_image(Request $request){
         Storage::disk('public')->delete($request->img);
         return redirect()->back();

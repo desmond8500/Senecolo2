@@ -25,22 +25,25 @@
 
 
     @include('0 Eiser.index.script')
-    <script src="{{ asset('senecolo3/particles.js-master/particles.js')}} "></script>
-<script>
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'senecolo3/particles.js-master/json/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-</script>
 
 </body>
 
 </html>
-{{-- <style>
+
+@php
+    $background = Storage::disk('public')->files("Ecommerce/images/background");
+    dump($background);
+@endphp
+
+<style>
+
+
     body{
-        /* background: powderblue; */
-        background: rgb(148,187,233);
-background: radial-gradient(circle, rgba(148,187,233,1) 50%, rgba(174,238,183,1) 100%);
-}
-</style> --}}
+        /* background: rgb(148,187,233);
+        background: radial-gradient(circle, rgba(148,187,233,1) 50%, rgba(174,238,183,1) 100%); */
+
+        background-image: url('/storage/Ecommerce/images/background/background.jpg');
+        /* background-repeat: repeat-y; */
+    }
+</style>
 

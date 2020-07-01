@@ -104,7 +104,9 @@
         {{-- @foreach (Storage::disk('public')->files("Ecommerce/images/background") as $image) --}}
         <div class="col-md-6 alert-primary p-2">
             <h4>Fond de page</h4>
-            <img src="{{asset("storage/$image[0]")}} " alt="" class="img-fluid" height="200px">
+            @if (isset($image[0]))
+                <img src="{{asset("storage/$image[0]")}} " alt="" class="img-fluid" height="200px">
+            @endif
             <a href="{{ route('backoffice.delete.carousel.image',['img'=>$image])}} ">Supprimer</a>
 
             <form action="{{route('backoffice.add.to.background')}}" method="POST" enctype="multipart/form-data">

@@ -17,9 +17,7 @@
         @include('0 Eiser.index.mainmenu')
   </header>
 
-    <div class="content">
-        @yield('content')
-    </div>
+    @yield('content')
 
     @section('footer')
     @include('0 Eiser.index.footer')
@@ -48,9 +46,5 @@
         /* background-repeat: repeat-y; */
     }
 
-    .content{
-        background: lightgray;
-        display: block;
-    }
 </style>
 

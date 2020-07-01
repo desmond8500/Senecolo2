@@ -98,7 +98,7 @@
         @php
             $image = Storage::disk('public')->files("Ecommerce/images/background");
 
-            dump($image);
+            // dump($image);
 
         @endphp
         {{-- @foreach (Storage::disk('public')->files("Ecommerce/images/background") as $image) --}}

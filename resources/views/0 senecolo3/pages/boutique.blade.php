@@ -3,8 +3,7 @@
 @section('content')
     @include('0 Eiser.index.banner')
 
-
-    <div class="container bg-white p-4">
+    <div class="container bg-light p-4">
 
         <section class="cat_product_are section_ga ">
             <div class="container">

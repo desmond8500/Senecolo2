@@ -95,10 +95,16 @@
         </div>
     </div>
     <div class="col-md-12">
-        @foreach (Storage::disk('public')->files("Ecommerce/images/background") as $image)
+        @php
+            $image = Storage::disk('public')->files("Ecommerce/images/background");
+
+            dump($image);
+
+        @endphp
+        {{-- @foreach (Storage::disk('public')->files("Ecommerce/images/background") as $image) --}}
         <div class="col-md-6 alert-primary p-2">
             <h4>Fond de page</h4>
-            <img src="{{asset("storage/$image")}} " alt="" class="img-fluid" height="200px">
+            <img src="{{asset("storage/$image[0]")}} " alt="" class="img-fluid" height="200px">
             <a href="{{ route('backoffice.delete.carousel.image',['img'=>$image])}} ">Supprimer</a>
 
             <form action="{{route('backoffice.add.to.background')}}" method="POST" enctype="multipart/form-data">
@@ -110,7 +116,7 @@
                 <button type="submit" class="btn btn-primary">Ajouter le fond d'écran</button>
             </form>
         </div>
-        @endforeach
+        {{-- @endforeach --}}
     </div>
     <div class="col-md-12 text-secondary my-4">
         <div class="alert alert-primary alert-dismissible fade show" role="alert">
@@ -121,7 +127,9 @@
             <strong>Information</strong> <br>
             Pour ajouter une image il suffit que cliquer sur le bouton parcourir, sélectionner l'image en question et appuyer sur ajouter pour envoyer l'image. <br>
             Pour le carousel et la pub3 vous pouvez charger plusieurs images à la fois. <br>
-            Pub 1 et 2 sont limités à une image chacune. <br><br>
+            Pub 1 et 2 sont limités à une image chacune. <br>
+            L'image de fond doit être en PNG <br><br>
+
             Voilà ci dessous les dimensions recommandées :
             <ol>
                 <li>Carousel = 900 * 570</li>

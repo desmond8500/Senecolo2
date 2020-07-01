@@ -42,7 +42,7 @@
         /* background: rgb(148,187,233);
         background: radial-gradient(circle, rgba(148,187,233,1) 50%, rgba(174,238,183,1) 100%); */
 
-        background-image: url('/storage/Ecommerce/images/background/background.jpg');
+        background-image: url('/storage/Ecommerce/images/background/background.png');
         /* background-repeat: repeat-y; */
     }
 </style>

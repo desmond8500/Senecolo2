@@ -142,7 +142,9 @@ class SenecoloController extends Controller
         Storage::disk('public')->deleteDirectory("Ecommerce/images/background");
 
         $img = $request->file('background')->getClientOriginalName();
-        Storage::disk('public')->put("Ecommerce/images/background/background.jpg", File::get($request->file('background')));
+
+        // dd($img);
+        Storage::disk('public')->put("Ecommerce/images/background/background.png", File::get($request->file('background')));
         // Storage::disk('public')->put("Ecommerce/images/background/$img", File::get($request->file('background')));
 
         return redirect()->back();

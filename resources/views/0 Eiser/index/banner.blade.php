@@ -3,7 +3,7 @@
     background: #0B7AED;
     /* background: #F6F6F6; */
     padding-top: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: white;
 }
 .banner_link{

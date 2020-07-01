@@ -17,7 +17,9 @@
         @include('0 Eiser.index.mainmenu')
   </header>
 
-    @yield('content')
+    <div class="content">
+        @yield('content')
+    </div>
 
     @section('footer')
     @include('0 Eiser.index.footer')
@@ -44,6 +46,11 @@
 
         background-image: url('/storage/Ecommerce/images/background/background.png');
         /* background-repeat: repeat-y; */
+    }
+
+    .content{
+        background: lightgray;
+        display: block;
     }
 </style>
 

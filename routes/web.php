@@ -5,6 +5,13 @@ use Illuminate\Routing\RouteGroup;
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->middleware('verified');
 
+// ====================================================================================
+// Vue Project
+// ====================================================================================
+Route::get('/ecolo4/index', 'EcoloController@index')->name('ecolo4.index');
+Route::get('/ecolo4/landing', 'EcoloController@landing')->name('ecolo4.landing');
+
+Route::get('/ecolo4/article_list_api', 'EcoloController@article_list_api')->name('ecolo4.article_list_api');
 
 // ====================================================================================
 // Main routes
@@ -13,7 +20,8 @@ Route::get('/home', 'HomeController@index')->middleware('verified');
 // Route::get('/', 'SenecoloController@index')->name('index');
 
 Route::get('/', function () {
-    return redirect()->route('boutique');
+    // return redirect()->route('boutique');
+    return redirect()->route('ecolo4.index');
 })->name('index');
 Route::get('/blog/index', 'SenecoloController@blog')->name('blog');
 

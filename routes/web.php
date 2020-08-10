@@ -21,7 +21,7 @@ Route::get('/ecolo4/article_list_api', 'EcoloController@article_list_api')->name
 
 Route::get('/', function () {
     // return redirect()->route('boutique');
-    return redirect()->route('ecolo4.index');
+    return redirect()->route('ecolo4.landing');
 })->name('index');
 Route::get('/blog/index', 'SenecoloController@blog')->name('blog');
 
